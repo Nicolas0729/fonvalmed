@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --colorGob: #3366CC;
+    --colorNaranja:#FB8406;
+    --colorNaranjaOscuro: #FF4C00;
+    --ColorNaranjaClaro: #FFB33C;
+    --colorNegro: #000;
+    --colorBlanco: #fff; 
+    --colorGrisTab: #A8A89D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body a, h1, h2, h3, h4, h5 {
+    margin-bottom: 0;
+    text-decoration: none;
+}
+body p {
+    margin-bottom: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+body h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+} 
+
+/* ----rec----- */
+.global {
+    width: 100%;
+    background-color: var(--ColorNaranjaClaro);
+    margin-bottom: 30px;
+}
+.global .contentGlobal {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 45px 20px;
+}
+.contentGlobal .rowRec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+    .rowRec .itemRec {
+        display: flex;
+        color: var(--colorBlanco);
+    }
+    .rowRec .itemRec .titleRec {
+        width: 100%;
+        max-width: 419px;
+        margin-left: auto;
+        display: flex;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: right;
+    }
+    .rowRec .itemRec .dateAuto {
+        width: 100%;
+        max-width: 292px;
+        display: flex;
+        font-size: 30px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+    }
+
+
