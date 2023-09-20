@@ -9,6 +9,10 @@
     --colorNegro: #000;
     --colorBlanco: #fff; 
     --colorGrisTab: #A8A89D;
+    --colorBorderHead: #909090;
+    --colorAzulLinks: #00AEEF;
+    --colorFondoGris: #F1F1F1;
+    --colorBorderCard: #D9D9D9;
 }
 
 * {
@@ -29,17 +33,66 @@ body h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 } 
 
-/* ----rec----- */
+/* ----BtnGlobal----- */
+.btnGlobal {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--colorNaranjaOscuro);
+    color: var(--colorBlanco);
+    border-radius: 50px;
+    padding: 9px 30px;
+    font-family: 'Work Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.btnGlobal:hover {
+    background-color: var(--colorNaranja);
+}
+
+/* ----headGlobal------- */
+.headGlobal {
+    width: 100%;
+    border-bottom: 1px solid var(--colorBorderHead);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.headGlobal .titleGlobal {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--colorNegro);
+    padding-bottom: 20px;
+    border-bottom: 5px solid var(--colorNegro);
+    margin-bottom: -3px;
+}
+.headGlobal .titleGlobal .lightFonv {
+    font-weight: 400;
+}
+.headGlobal .linkMore {
+    font-size: 15px;
+    color: var(--colorAzulLinks);
+    font-family: 'Work Sans', sans-serif;
+}
+.headGlobal .linkMore:hover {
+    color: var(--colorNaranja);
+}
+
+/* ----contenedorGlobal----- */
 .global {
     width: 100%;
+}
+.globalNaranjaClaro {
     background-color: var(--ColorNaranjaClaro);
     margin-bottom: 30px;
+}
+.globalGrisClaro {
+    background-color: var(--colorFondoGris);
 }
 .global .contentGlobal {
     width: 100%;
     max-width: 1180px;
     margin: auto;
-    padding: 45px 20px;
+    padding: 30px 20px;
 }
 .contentGlobal .rowRec {
     display: grid;
@@ -67,6 +120,73 @@ body h1, h2, h3, h4 {
         font-weight: 700;
         display: flex;
         flex-direction: column;
+    }
+
+/* ---RowIf--- */
+.contentGlobal .rowIf {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+    .rowIf .infoIf {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .rowIf .infoIf .titleIf {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--colorNegro);
+    }
+    .rowIf .infoIf p {
+        font-size: 16px;
+        color: var(--colorNegro);
+    }
+    .rowIf .imgIf .imgFonv {
+        width: 100%;
+        height: 275px;
+        border: 1px solid var(--colorNegro);
+        padding: 10px;
+        display: flex;
+    }
+    .rowIf .imgIf .imgFonv img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+/* ---PayMetod---- */
+.contentGlobal .payMetod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ----mainTram--- */
+.contentGlobal .mainTram {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+.contentGlobal .mainTram h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--colorNegro);
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 30px;
+}
+    .mainTram .cardFonv {
+        width: 100%;
+        height: 168px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-left: 14px solid var(--colorBorderCard);
+        border-radius: 10px;
+        padding: 30px 14px;
+        background-color: var(--colorBlanco);
     }
 
 
