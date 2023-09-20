@@ -13,6 +13,7 @@
     --colorAzulLinks: #00AEEF;
     --colorFondoGris: #F1F1F1;
     --colorBorderCard: #D9D9D9;
+    --colorTextPost: #1E1E1E;
 }
 
 * {
@@ -283,6 +284,73 @@ body h1, h2, h3, h4 {
         color: var(--colorNegro);
         font-family: 'Work Sans', sans-serif;
     }
+/* -----Mod-Noticias----- */
+    .mainTram .rowTwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .mainTram .rowTwo .colPost {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+        .rowTwo .colPost .postMajor {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .rowTwo .colPost .postMajor .titlePost a {
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--colorNegro);
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .rowTwo .colPost .postMajor .byPost {
+            font-size: 13px;
+            font-family: 'Work Sans', sans-serif;
+            margin-bottom: 5px;
+        }
+        .rowTwo .colPost .postMajor .listVim {
+            display: flex;
+            gap: 17px;
+            margin-bottom: 16px;
+        }
+        .rowTwo .colPost .postMajor .listVim .itemVim {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .rowTwo .colPost .postMajor .listVim .itemVim i {
+            width: 10px;
+            height: 10px;
+            border-radius: 15px;
+            font-size: 8px;
+            background-color: var(--colorNegro);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--colorBlanco);
+        }
+        .rowTwo .colPost .postMajor .listVim .itemVim .tagPost {
+            font-size: 14px;
+            font-family: 'Work Sans', sans-serif;
+            color: var(--colorNegro);
+        }
+        .rowTwo .colPost .postMajor .imgPost img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .rowTwo .colPost .postMajor p {
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--colorNegro);
+            margin-bottom: 30px;
+        }
 
 /* ---RowThree--- */
 .contentGlobal .rowThree {
@@ -316,6 +384,6 @@ body h1, h2, h3, h4 {
     .rowThree .cardDest .textDest .titleDest{
         font-size: 14px;
         font-weight: 600;
-        color: var(--colorNegro);
+        color: var(--colorTextPost);
     }
 
