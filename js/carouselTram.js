@@ -1,6 +1,8 @@
 $('.carouselTram').owlCarousel({
     loop:true,
     margin:28,
+    dots: true,
+    dotsEach: true,
     nav:true,
     responsive:{
         0:{

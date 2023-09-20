@@ -47,6 +47,19 @@ body h1, h2, h3, h4 {
 .btnGlobal:hover {
     background-color: var(--colorNaranja);
 }
+.btnGlobalSec {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--colorNaranjaOscuro);
+    color: var(--colorBlanco);
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-family: 'Work Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+.btnGlobalSec:hover {
+    background-color: var(--colorNaranja);
+}
 
 /* ----headGlobal------- */
 .headGlobal {
@@ -55,7 +68,7 @@ body h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .headGlobal .titleGlobal {
     font-size: 25px;
@@ -170,13 +183,76 @@ body h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
 } 
-.contentGlobal .mainTram h5 {
+.contentGlobal .mainTram .textMain {
     font-size: 18px;
     font-weight: 400;
     color: var(--colorNegro);
     font-family: 'Work Sans', sans-serif;
     margin-bottom: 30px;
 }
+    .mainTram .carouselTram {
+        width: 100%;
+    }
+    /* ------Dots-carouselTram---- */
+    .owl-carousel .owl-dots.disabled, 
+    .owl-carousel .owl-nav.disabled {
+        display: inline-block !important;
+    }
+    .carouselTram .owl-dots {
+        width: 100%;
+        height: 23px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .carouselTram .owl-dot {
+        height: 14px;
+        width: 14px;
+        padding: 4px;
+        border-radius: 25px;
+        cursor: pointer;
+        outline: none;
+        margin: 0 2.5px;
+        border: 2px solid var(--color_white)!important;
+        background-color: #D9D9D9 !important;
+        transition: 0.3s;
+    }
+    .carouselTram .owl-dot.active {
+        width: 23px;
+        height: 23px;
+        background-color: var(--colorNaranjaOscuro)!important;
+    }
+    /* ----Nav-carouselTram---- */
+    .carouselTram .owl-nav {
+        width: 288px !important;
+        max-width: 288px;
+        height: 23px !important;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -30px !important;
+    }
+    .carouselTram .owl-prev,
+    .carouselTram .owl-next {
+        background-color: transparent !important;
+        color: var(--colorNaranjaOscuro) !important;
+        transition: 0.3s;
+    }
+    .carouselTram .owl-next {
+        right: 0;
+    }
+    .carouselTram .owl-prev {
+        left: 0;
+    }
+    .carouselTram .owl-prev span,
+    .carouselTram .owl-next span {
+        width: 0;
+        background-color: red;
+        font-size: 40px;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        padding-top: 10px;
+    }
     .mainTram .cardFonv {
         width: 100%;
         height: 168px;
@@ -188,5 +264,58 @@ body h1, h2, h3, h4 {
         padding: 30px 14px;
         background-color: var(--colorBlanco);
     }
+    .mainTram .cardFonv:hover {
+        border-left: 14px solid var(--colorNaranjaOscuro);
+    }
+    .mainTram .cardFonv .topCard h3 a {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--colorNaranjaOscuro);
+        display: flex;
+    }
+    .mainTram .botCard {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .mainTram .botCard .linkMas {
+        font-size: 12px;
+        color: var(--colorNegro);
+        font-family: 'Work Sans', sans-serif;
+    }
 
+/* ---RowThree--- */
+.contentGlobal .rowThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+    .rowThree .cardDest {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        transition: all 0.5s ease-in-out;
+    }
+    .rowThree .cardDest:hover {
+        box-shadow: 0 3px 20px #00000029;
+    }
+    .rowThree .cardDest .imgDest {
+        width: 100%;
+        height: 216px;
+    }
+    .rowThree .cardDest .imgDest img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .rowThree .cardDest .textDest {
+        text-align: center;
+    }
+    .rowThree .cardDest .textDest .titleDest{
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--colorNegro);
+    }
 
