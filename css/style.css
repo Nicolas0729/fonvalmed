@@ -22,8 +22,10 @@
     box-sizing: border-box;
 }
 
-body a, h1, h2, h3, h4, h5 {
+body h1, h2, h3, h4, h5 {
     margin-bottom: 0;
+}
+body a {
     text-decoration: none;
 }
 body p {
@@ -47,6 +49,8 @@ body h1, h2, h3, h4 {
 }
 .btnGlobal:hover {
     background-color: var(--colorNaranja);
+    text-decoration: none;
+    color: var(--colorBlanco);
 }
 .btnGlobalSec {
     font-size: 12px;
@@ -60,6 +64,8 @@ body h1, h2, h3, h4 {
 }
 .btnGlobalSec:hover {
     background-color: var(--colorNaranja);
+    text-decoration: none;
+    color: var(--colorBlanco);
 }
 
 /* ----headGlobal------- */
@@ -89,6 +95,7 @@ body h1, h2, h3, h4 {
 }
 .headGlobal .linkMore:hover {
     color: var(--colorNaranja);
+    text-decoration: none;
 }
 
 /* ----contenedorGlobal----- */
@@ -199,13 +206,13 @@ body h1, h2, h3, h4 {
     .owl-carousel .owl-nav.disabled {
         display: inline-block !important;
     }
-    .carouselTram .owl-dots {
+    .carouselFonv .owl-dots {
         width: 100%;
         height: 23px;
         text-align: center;
         margin-top: 30px;
     }
-    .carouselTram .owl-dot {
+    .carouselFonv .owl-dot {
         height: 14px;
         width: 14px;
         padding: 4px;
@@ -217,13 +224,13 @@ body h1, h2, h3, h4 {
         background-color: #D9D9D9 !important;
         transition: 0.3s;
     }
-    .carouselTram .owl-dot.active {
+    .carouselFonv .owl-dot.active {
         width: 23px;
         height: 23px;
         background-color: var(--colorNaranjaOscuro)!important;
     }
     /* ----Nav-carouselTram---- */
-    .carouselTram .owl-nav {
+    .carouselFonv .owl-nav {
         width: 288px !important;
         max-width: 288px;
         height: 23px !important;
@@ -232,20 +239,20 @@ body h1, h2, h3, h4 {
         justify-content: space-between;
         margin-bottom: -30px !important;
     }
-    .carouselTram .owl-prev,
-    .carouselTram .owl-next {
+    .carouselFonv .owl-prev,
+    .carouselFonv .owl-next {
         background-color: transparent !important;
         color: var(--colorNaranjaOscuro) !important;
         transition: 0.3s;
     }
-    .carouselTram .owl-next {
+    .carouselFonv .owl-next {
         right: 0;
     }
-    .carouselTram .owl-prev {
+    .carouselFonv .owl-prev {
         left: 0;
     }
-    .carouselTram .owl-prev span,
-    .carouselTram .owl-next span {
+    .carouselFonv .owl-prev span,
+    .carouselFonv .owl-next span {
         width: 0;
         background-color: red;
         font-size: 40px;
@@ -254,7 +261,8 @@ body h1, h2, h3, h4 {
         font-weight: 500;
         padding-top: 10px;
     }
-    .mainTram .cardFonv {
+    /* ----CardFonv----- */
+    .cardFonv {
         width: 100%;
         height: 168px;
         display: flex;
@@ -265,93 +273,233 @@ body h1, h2, h3, h4 {
         padding: 30px 14px;
         background-color: var(--colorBlanco);
     }
-    .mainTram .cardFonv:hover {
+    .cardFonv:hover {
         border-left: 14px solid var(--colorNaranjaOscuro);
     }
-    .mainTram .cardFonv .topCard h3 a {
+    .cardFonv .topCard h3 a {
         font-size: 14px;
         font-weight: 600;
         color: var(--colorNaranjaOscuro);
         display: flex;
     }
-    .mainTram .botCard {
+    .cardFonv .topCard h3 a:hover {
+        text-decoration: none;
+    }
+    .botCard {
         display: flex;
         align-items: center;
         gap: 10px;
     }
-    .mainTram .botCard .linkMas {
+    .botCard .linkMas {
         font-size: 12px;
         color: var(--colorNegro);
         font-family: 'Work Sans', sans-serif;
     }
-/* -----Mod-Noticias----- */
-    .mainTram .rowTwo {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    .botCard .linkMas:hover {
+        text-decoration: none;
     }
-    .mainTram .rowTwo .colPost {
+    .cardGal {
+        width: 100%;
+        height: 230px;
         display: flex;
         flex-direction: column;
+        gap: 10px;
+    }
+    .cardAud {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        border-left: 4px solid var(--colorNaranjaOscuro);
+    }
+    .cardGal .imgGal {
+        width: 100%;
+        height: 145px;
+    }
+    .cardGal .imgGal .vidGal {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .cardGal .textGal {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cardGal .textGal .titleGal {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--colorNegro);
+    }
+    .cardGal .textGal .titleGal i {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+/* -----Mod-Noticias----- */
+.rowTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.rowTwo .colPost {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+    .rowTwo .colPost .postMajor {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+    .rowTwo .colPost .postMajor:hover {
+        box-shadow: 0 3px 20px #00000029;
+    }
+    .rowTwo .colPost .postMajor .titlePost a {
+        font-size: 19px;
+        font-weight: 600;
+        color: var(--colorNegro);
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .byPost {
+        font-size: 13px;
+        font-family: 'Work Sans', sans-serif;
+        margin-bottom: 5px;
+    }
+    /* ----Lista-etiqueta-publicaición---- */
+    .listVim {
+        display: flex;
+        gap: 17px;
+        margin-bottom: 16px;
+    }
+    .listVim .itemVim {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    .listVim .itemVim i {
+        width: 10px;
+        height: 10px;
+        border-radius: 15px;
+        font-size: 8px;
+        background-color: var(--colorNegro);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--colorBlanco);
+        transition: all 0.3s ease-in-out;
+    }
+    .listVim .itemVim .tagPost {
+        font-size: 14px;
+        font-family: 'Work Sans', sans-serif;
+        color: var(--colorNegro);
+        transition: all 0.3s ease-in-out;
+    }
+    .listVim .itemVim:hover .tagPost {
+        font-weight: 600;
+    }
+    .listVim .itemVim:hover i {
+        background-color: var(--colorNaranjaOscuro);
+    }
+/* ---Column-Post---- */
+.rowTwo .colPost .postMajor .imgPost {
+    width: 100%;
+}
+.rowTwo .colPost .postMajor .imgPost img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.rowTwo .colPost .postMajor p {
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--colorNegro);
+    margin-bottom: 30px;
+}
+.rowTwo .colPost .postSid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    gap: 20px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+.rowTwo .colPost .postSid:hover {
+    box-shadow: 0 3px 20px #00000029;
+}
+.rowTwo .colPost .postSid .imgPostSid img {
+    width: 100%;
+    height: 175px;
+}
+.rowTwo .colPost .postSid .titleSid a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--colorNegro);
+    margin-bottom: 6px;
+    display: flex;
+}
+.rowTwo .colPost .postSid p {
+    font-size: 13px;
+    line-height: 14px;
+    color: var(--colorTextPost);
+    margin-bottom: 10px;
+}
+.rowTwo .colPost .postSid .linkRead {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--colorNaranjaOscuro);
+    font-family: 'Work Sans', sans-serif;
+}
+.rowTwo .colPost .postSid .linkRead:hover {
+    color: var(--colorNaranja);
+}
+/* -----socialFonv--- */
+    .rowTwo .socialFonv {
+        width: 100%;
+    }
+    .rowTwo .socialFonv .iframeFonv {
+        width: 100%;
+        height: 576px;
+        display: flex;
+        margin-bottom: 0 !important;
+    }
+    .rowTwo .socialFonv .twitter-tweet.twitter-tweet-rendered {
+        max-width: 100% !important;
+        margin-bottom: 0;
+        margin-top: 0 !important;
+    }
+    
+/* ----Galería-Fonvalmed--- */
+    .mainTram .tabGal {
+        width: 100%;
+        margin-bottom: 30px;
+        border-bottom: 0;
+        display: flex;
         gap: 20px;
     }
-        .rowTwo .colPost .postMajor {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
-        }
-        .rowTwo .colPost .postMajor .titlePost a {
-            font-size: 19px;
-            font-weight: 600;
-            color: var(--colorNegro);
-            margin-bottom: 20px;
-            display: flex;
-        }
-        .rowTwo .colPost .postMajor .byPost {
-            font-size: 13px;
-            font-family: 'Work Sans', sans-serif;
-            margin-bottom: 5px;
-        }
-        .rowTwo .colPost .postMajor .listVim {
-            display: flex;
-            gap: 17px;
-            margin-bottom: 16px;
-        }
-        .rowTwo .colPost .postMajor .listVim .itemVim {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-        }
-        .rowTwo .colPost .postMajor .listVim .itemVim i {
-            width: 10px;
-            height: 10px;
-            border-radius: 15px;
-            font-size: 8px;
-            background-color: var(--colorNegro);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--colorBlanco);
-        }
-        .rowTwo .colPost .postMajor .listVim .itemVim .tagPost {
-            font-size: 14px;
-            font-family: 'Work Sans', sans-serif;
-            color: var(--colorNegro);
-        }
-        .rowTwo .colPost .postMajor .imgPost img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        .rowTwo .colPost .postMajor p {
-            font-size: 18px;
-            line-height: 22px;
-            color: var(--colorNegro);
-            margin-bottom: 30px;
-        }
-
+    .mainTram .tabGal .navGal .linkTab {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 16px 22px;
+        font-family: 'Montserrat', sans-serif;
+        border: 2px solid var(--colorBorderCard);
+        background-color: #f8f8f8;
+        border-radius: 0;
+        color: var(--colorGrisTab);
+        transition: all 0.3s ease-in-out;
+    }
+    .mainTram .tabGal .navGal .linkTab:hover {
+        background-color: var(--colorFondoGris);
+    }
+    .mainTram .tabGal .navGal .linkTab.active {
+        background-color: #FFF0DE;
+        border: 2px solid #FFC793;
+        color: var(--colorNaranjaOscuro);
+    }
 /* ---RowThree--- */
 .contentGlobal .rowThree {
     display: grid;
@@ -368,6 +516,7 @@ body h1, h2, h3, h4 {
     }
     .rowThree .cardDest:hover {
         box-shadow: 0 3px 20px #00000029;
+        text-decoration: none;
     }
     .rowThree .cardDest .imgDest {
         width: 100%;
