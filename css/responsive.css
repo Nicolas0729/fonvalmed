@@ -1,0 +1,136 @@
+@media screen and (min-width: 800px) {
+    .rowIf .infoIf .imgFonvMob {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    /* ---HeadGlobal--- */
+    .headGlobal {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-bottom: 0;
+    }
+    .headGlobal .titleGlobal {
+        width: 100%;
+        font-size: 16px;
+    }
+    .headGlobal .linkMore {
+        margin-left: auto;
+    }
+    .btnGlobal {
+        font-size: 11px;
+    }
+
+    /* ---rowRec---- */
+    .contentGlobal .rowRec {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .rowRec .itemRec .titleRec {
+        text-align: left;
+        font-size: 18px;
+    }
+    .rowRec .itemRec .dateAuto {
+        font-size: 17px;
+    }
+
+    /* ---RowIf---- */
+    .contentGlobal .rowIf {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .rowIf .imgIfMob {
+        display: none;
+    }
+    .rowIf .imgIf .imgFonvMob {
+        height: auto;
+    }
+    .rowIf .infoIf .titleIf {
+        font-size: 14px;
+    }
+    .rowIf .infoIf p {
+        font-size: 13px;
+    }
+
+    /* ----PayMetod---- */
+    .contentGlobal .payMetod {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* ---MainTram--- */
+    .contentGlobal .mainTram .textMain {
+        font-size: 13px;
+    }
+
+    /* ----RowThree---- */
+    .contentGlobal .rowThree {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .rowThree .cardDest {
+        box-shadow: 0 3px 20px #00000029;
+    }
+
+    /* ---RowTwo--- */
+    .rowTwo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .rowTwo .colPost .postSid,
+    .rowTwo .colPost .postMajor {
+        box-shadow: 0 3px 20px #00000029;
+    }
+    .rowTwo .colPost .postSid {
+        gap: 10px;
+    }
+    .rowTwo .colPost .postMajor .titlePost a {
+        font-size: 14px;
+    }
+    .listVim {
+        margin-bottom: 10px;
+    }
+    .listVim .itemVim .tagPost {
+        font-size: 11px;
+    }
+    .rowTwo .colPost .postMajor .imgPost img {
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .byPost {
+        font-size: 11px;
+    }
+    .rowTwo .colPost .postSid .titleSid a {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .rowTwo .colPost .postSid .linkRead {
+        font-size: 12px;
+    }
+    .rowTwo .colPost .postMajor p {
+        font-size: 13px;
+    }
+    .rowTwo .colPost .postSid .imgPostSid img {
+        height: 130px;
+        object-fit: cover;
+    }
+    .rowTwo .colPost .postSid p {
+        display: none;
+    }
+    .rowTwo .socialFonv .iframeFonv {
+        width: 100% !important;
+        height: 490px;
+    }
+    .rowTwo .socialFonv .twitter-tweet.twitter-tweet-rendered {
+        max-width: 99% !important;
+        min-height: 0px !important;
+    }
+    ._4-u2 {
+        border-radius: 15px;
+    }
+}

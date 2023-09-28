@@ -35,7 +35,10 @@ body p {
 body h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 } 
+body button:focus {
+    outline: 0;
 
+}
 /* ----BtnGlobal----- */
 .btnGlobal {
     font-size: 14px;
@@ -161,6 +164,18 @@ body h1, h2, h3, h4 {
         font-weight: 700;
         color: var(--colorNegro);
     }
+    .rowIf .infoIf .imgFonvMob {
+        width: 100%;
+        height: 275px;
+        border: 1px solid var(--colorNegro);
+        padding: 10px;
+        display: flex;
+    }
+    .rowIf .infoIf .imgFonvMob img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     .rowIf .infoIf p {
         font-size: 16px;
         color: var(--colorNegro);
@@ -174,6 +189,7 @@ body h1, h2, h3, h4 {
     }
     .rowIf .imgIf .imgFonv img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -362,6 +378,7 @@ body h1, h2, h3, h4 {
         color: var(--colorNegro);
         margin-bottom: 20px;
         display: flex;
+        font-family: 'Work Sans', sans-serif;
     }
     .byPost {
         font-size: 13px;
@@ -439,6 +456,7 @@ body h1, h2, h3, h4 {
     font-weight: 500;
     line-height: 20px;
     color: var(--colorNegro);
+    font-family: 'Work Sans', sans-serif;
     margin-bottom: 6px;
     display: flex;
 }
