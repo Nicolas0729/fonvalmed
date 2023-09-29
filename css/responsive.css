@@ -66,6 +66,23 @@
     .contentGlobal .mainTram .textMain {
         font-size: 13px;
     }
+    .mainTram .tabGal {
+        gap: 10px;
+    }
+    .nav-tabs .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    .mainTram .tabGal .navGal .linkTab.active {
+        width: 100%;
+    }
+    .mainTram .tabGal .navGal .linkTab {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .cardGal .textGal .titleGal {
+        font-size: 13px;
+    }
 
     /* ----RowThree---- */
     .contentGlobal .rowThree {
