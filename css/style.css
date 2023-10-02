@@ -16,6 +16,7 @@
     --colorTextPost: #1E1E1E;
     --colorBorderTab: #FFC793;
     --fondoTabs: #FFF0DE;
+    --colorBorderNav: #909090;
 }
 
 * {
@@ -119,6 +120,13 @@ body button:focus {
     background-image: url(../img/cobro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.coverGlobalObras {
+    width: 100%;
+    background-image: url(../img/obras.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .coverGlobal .degraCover {
     background: rgb(255,255,255);
@@ -291,7 +299,6 @@ body button:focus {
     }
     .rowIf .infoTram p {
         font-size: 16px;
-        line-height: 18px;
     }
     .rowIf .infoTram .listTram {
         width: 100%;
@@ -493,6 +500,51 @@ body button:focus {
     .cardGal .textGal .titleGal i {
         font-size: 15px;
         margin-right: 5px;
+    }
+
+/* ----RowTab----- */
+.contentGlobal .rowTab {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+}
+    .rowTab .tabObras {
+        width: 100%;
+        max-width: 296px;
+        display: flex;
+        flex-direction: column;
+    }
+    .rowTab .tabObras .itemNav {
+        display: flex;
+    }
+    .rowTab .tabObras .itemNav .navLink {
+        width: 100%;
+        border-left: 5px solid var(--colorBorderNav);
+        border-top: 1px solid var(--colorBorderCard);
+        border-right: 1px solid var(--colorBorderCard);
+        padding: 17px 28px;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--colorNegro);
+        border-radius: 0px;
+        transition: all 0.3s ease-in-out;
+    }
+    .rowTab .tabObras .itemNav .navLink:last-child {
+        border-bottom: 1px solid var(--colorBorderCard);
+    }
+    .rowTab .tabObras .itemNav .navLink:hover {
+        background-color: var(--colorFondoGris);
+    }
+    .rowTab .tabObras .itemNav .navLink.active {
+        background-color: var(--fondoTabs);
+        color: var(--colorNaranjaOscuro);
+        border-left: 5px solid var(--colorNaranjaOscuro);
+        border-right: 0px;
+    }
+    .rowTab .contentTab {
+        max-width: 100%;
+        padding: 30px;
     }
 
 /* -----Mod-Noticias----- */
