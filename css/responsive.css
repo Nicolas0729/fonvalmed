@@ -23,6 +23,21 @@
         font-size: 11px;
     }
 
+    /* ---CoverGlobal--- */
+    .degraCover .contentCover {
+        padding: 30px 20px;
+    }
+    .degraCover .contentCover .titleCover {
+        font-size: 17px;
+    }
+    .degraCover .contentCover .titleFonv {
+        font-size: 17px;
+    }
+
+    .contentGlobal .headSingle .titleSg {
+        font-size: 17px;
+    }
+
     /* ---rowRec---- */
     .contentGlobal .rowRec {
         display: grid;
@@ -60,6 +75,28 @@
     }
     .rowIf .infoIf p {
         font-size: 13px;
+    }
+    .rowIf .infoTram .titleTram {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .rowIf .infoTram .listTram li {
+        padding: 7px 0px;
+    }
+    .rowIf .infoTram .listTram li span {
+        font-size: 13px;
+    }
+    .rowIf .infoTram .titleTramMin {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .rowIf .infoTram p {
+        font-size: 12px;
+        line-height: auto;
+    }
+    .contentGlobal .titleFonvSingle {
+        font-size: 17px;
+        margin-bottom: 15px;
     }
 
     /* ----PayMetod---- */

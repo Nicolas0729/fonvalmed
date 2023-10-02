@@ -114,6 +114,12 @@ body button:focus {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.coverGlobalTram {
+    width: 100%;
+    background-image: url(../img/cobro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .coverGlobal .degraCover {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(255,255,255,0.7819502801120448) 39%, rgba(255,255,255,0) 100%);
@@ -169,6 +175,13 @@ body button:focus {
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
 }
+.contentGlobal .titleFonvSingle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorNaranjaOscuro);
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
 .contentGlobal .rowRec {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -218,6 +231,12 @@ body button:focus {
         color: var(--colorNegro);
         margin-bottom: 20px;
     }
+/* ----Headsingle---- */
+.contentGlobal .headSingle .titleSg {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--colorNaranjaOscuro);
+}
 
 /* ---RowIf--- */
 .contentGlobal .rowIf {
@@ -253,9 +272,55 @@ body button:focus {
         font-size: 16px;
         color: var(--colorNegro);
     }
+    .rowIf .infoTram {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rowIf .infoTram .titleTram {
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--colorNaranjaOscuro);
+        margin-bottom: 30px;
+    }
+    .rowIf .infoTram .titleTramMin {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--colorNaranjaOscuro);
+        margin-bottom: 20px;
+    }
+    .rowIf .infoTram p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .rowIf .infoTram .listTram {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rowIf .infoTram .listTram li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        border-bottom: 1px solid var(--colorBorderCard);
+    }
+    .rowIf .infoTram .listTram li span {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--colorNaranja);
+        font-family: 'Work Sans', sans-serif;
+    }
     .rowIf .imgIf .imgFonv {
         width: 100%;
         height: 275px;
+        border: 1px solid var(--colorNegro);
+        padding: 10px;
+        display: flex;
+    }
+    .rowIf .imgIf .imgFonvTram {
+        width: 100%;
+        height: 314px;
         border: 1px solid var(--colorNegro);
         padding: 10px;
         display: flex;
