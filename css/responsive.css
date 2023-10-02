@@ -36,6 +36,13 @@
     .rowRec .itemRec .dateAuto {
         font-size: 17px;
     }
+    .rowRec .itemRec .titleRec .recMax {
+        font-size: 25px;
+    }
+    .rowRec .itemRec p {
+        font-size: 13px;
+        line-height: 15px;
+    }
 
     /* ---RowIf---- */
     .contentGlobal .rowIf {
@@ -92,6 +99,16 @@
     }
     .rowThree .cardDest {
         box-shadow: 0 3px 20px #00000029;
+    }
+    .cardFonv .topCard .tramFonv a {
+        font-size: 13px;
+    }
+    .contentGlobal .titleTabs {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .rowThree .tabFonv {
+        font-size: 12px;
     }
 
     /* ---RowTwo--- */

@@ -14,6 +14,8 @@
     --colorFondoGris: #F1F1F1;
     --colorBorderCard: #D9D9D9;
     --colorTextPost: #1E1E1E;
+    --colorBorderTab: #FFC793;
+    --fondoTabs: #FFF0DE;
 }
 
 * {
@@ -100,6 +102,46 @@ body button:focus {
     color: var(--colorNaranja);
     text-decoration: none;
 }
+.headGlobal p {
+    font-size: 18px;
+    color: var(--colorNegro);
+}
+
+/* ----CoverGlobal---- */
+.coverGlobal {
+    width: 100%;
+    background-image: url(../img/tramites-cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.coverGlobal .degraCover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(255,255,255,0.7819502801120448) 39%, rgba(255,255,255,0) 100%);
+}
+.degraCover .contentCover {
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+    padding: 75px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.degraCover .contentCover .titleCover {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--colorNaranjaOscuro);
+}
+.degraCover .contentCover .titleFonv {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--colorNaranjaOscuro);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----ShadowFonv---- */
+.shadowFonv {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 /* ----contenedorGlobal----- */
 .global {
@@ -117,6 +159,15 @@ body button:focus {
     max-width: 1180px;
     margin: auto;
     padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contentGlobal .titleTabs {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorNegro);
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
 }
 .contentGlobal .rowRec {
     display: grid;
@@ -125,7 +176,13 @@ body button:focus {
 }
     .rowRec .itemRec {
         display: flex;
+        flex-direction: column;
         color: var(--colorBlanco);
+    }
+    .rowRec .itemRecLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .rowRec .itemRec .titleRec {
         width: 100%;
@@ -136,6 +193,16 @@ body button:focus {
         font-weight: 700;
         text-align: right;
     }
+    .rowRec .itemRec .titleRecOrange {
+        color: var(--colorNaranja);
+        display: flex;
+        flex-direction: column;
+        font-size: 39px;
+    }
+    .rowRec .itemRec .titleRec .recMax {
+        font-size: 55px;
+        color: var(--colorNaranjaOscuro);
+    }
     .rowRec .itemRec .dateAuto {
         width: 100%;
         max-width: 292px;
@@ -144,6 +211,12 @@ body button:focus {
         font-weight: 700;
         display: flex;
         flex-direction: column;
+    }
+    .rowRec .itemRec p {
+        font-size: 18px;
+        line-height: 20px;
+        color: var(--colorNegro);
+        margin-bottom: 20px;
     }
 
 /* ---RowIf--- */
@@ -296,6 +369,12 @@ body button:focus {
         font-size: 14px;
         font-weight: 600;
         color: var(--colorNaranjaOscuro);
+        display: flex;
+    }
+    .cardFonv .topCard .tramFonv a {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--colorNegro);
         display: flex;
     }
     .cardFonv .topCard h3 a:hover {
@@ -500,6 +579,7 @@ body button:focus {
         gap: 20px;
     }
     .mainTram .tabGal .navGal .linkTab {
+        width: 100%;
         font-size: 16px;
         font-weight: 600;
         padding: 16px 22px;
@@ -524,6 +604,28 @@ body button:focus {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
+.contentGlobal .rowThreeMin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}   
+    .rowThree .tabFonv {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--colorNaranjaOscuro);
+        width: 100%;
+        padding: 22px;
+        border: 2px solid var(--colorBorderTab);
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        background-color: var(--fondoTabs);
+        transition: all 0.3s ease-in-out;
+    }
+    .rowThree .tabFonv:hover {
+        text-decoration: none;
+        background-color: #FFC793;
+    }
+
     .rowThree .cardDest {
         width: 100%;
         display: flex;
