@@ -505,12 +505,11 @@ body button:focus {
 /* ----RowTab----- */
 .contentGlobal .rowTab {
     width: 100%;
-    display: flex;
-    grid-template-columns: 1fr 2fr;
+    display: grid;
+    grid-template-columns: 1fr 2.85fr;
 }
     .rowTab .tabObras {
         width: 100%;
-        max-width: 296px;
         display: flex;
         flex-direction: column;
     }
@@ -522,8 +521,8 @@ body button:focus {
         border-left: 5px solid var(--colorBorderNav);
         border-top: 1px solid var(--colorBorderCard);
         border-right: 1px solid var(--colorBorderCard);
-        padding: 17px 28px;
-        font-size: 18px;
+        padding: 17px 20px;
+        font-size: 15px;
         font-weight: 700;
         font-family: 'Montserrat', sans-serif;
         color: var(--colorNegro);
@@ -545,6 +544,66 @@ body button:focus {
     .rowTab .contentTab {
         max-width: 100%;
         padding: 30px;
+    }
+    .obraFonv {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .obraFonv .titleOb {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--colorNegro);
+        margin-bottom: 30px;
+    }
+    .obraFonv .rowOb {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 40px;
+    }
+    .obraFonv .rowOb .imgOb {
+        width: 100%;
+        height: 100%;
+    }
+    .obraFonv .rowOb .imgOb img {
+        width: 100%;
+        height: 371px;
+        object-fit: cover;
+    }
+    .obraFonv .rowOb .infoOb {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .obraFonv .rowOb .infoOb .processOb {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--colorNegro);
+    }
+    .obraFonv .rowOb .infoOb .porcentOb {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .obraFonv .rowOb .infoOb .progressBar {
+        width: 100%;
+        height: 3px;
+        background-color: var(--colorNaranja);
+    }
+    .obraFonv .rowOb .infoOb .textProgress {
+        font-size: 25px;
+        font-weight: 700;
+        color: var(--colorNaranja);
+    }
+    .obraFonv .rowOb .infoOb p {
+        font-size: 16px;
+        color: var(--colorNegro);
+        margin-bottom: 12px;
     }
 
 /* -----Mod-Noticias----- */

@@ -22,6 +22,9 @@
     .btnGlobal {
         font-size: 11px;
     }
+    .btnGlobalSec {
+        font-size: 11px;
+    }
 
     /* ---CoverGlobal--- */
     .degraCover .contentCover {
@@ -36,6 +39,41 @@
 
     .contentGlobal .headSingle .titleSg {
         font-size: 17px;
+    }
+
+    /* ---RowTab-----  */
+    .contentGlobal .rowTab {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .rowTab .tabObras .itemNav .navLink {
+        font-size: 13px;
+        padding: 7px;
+    }
+    .rowTab .contentTab {
+        padding: 10px;
+    }
+    .obraFonv .titleOb {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .obraFonv .rowOb {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .obraFonv .rowOb .infoOb .processOb {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .obraFonv .rowOb .infoOb .porcentOb {
+        margin-bottom: 10px;
+    }
+    .obraFonv .rowOb .infoOb .textProgress {
+        font-size: 14px;
+    }
+    .obraFonv .rowOb .infoOb p {
+        font-size: 12px;
     }
 
     /* ---rowRec---- */
