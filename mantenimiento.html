@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------Font-awesome-icons----------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>Mantenimiento | Fonvalmed</title>
+</head>
+<body>
+    
+    <!-- Mantenimiento -->
+    <div class="mant">  
+        <div class="contentMant">
+            <div class="leftMant">
+                <img src="img/logo-fonvalmed.png" alt="">
+                <div class="textMant">
+                    <h2 class="titleMant">Muchas gracias por su visita</h2>
+                    <p>Este sitio se encuentra en mantenimiento. Regresa en unas horas.</p>
+                </div>
+                <div class="socialMant">
+                    <a href="https://www.facebook.com/fonvalmed" target="_blank" class="iconRed"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/fonvalmed" target="_blank" class="iconRed"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="rightMant">
+                <img src="img/fondoMant.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        body a {
+            text-decoration: none;
+        }
+        .mant {
+            width: 100%;
+        }
+        .mant .contentMant {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .contentMant .leftMant {
+            width: 100%;
+            min-height: 100vh;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            border-right: 5px solid #FB8406;
+        }
+        .contentMant .leftMant img {
+            width: 100%;
+        }
+        .contentMant .leftMant .textMant {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+        .contentMant .leftMant .textMant .titleMant {
+            font-size: 25px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 0;
+        }
+        .contentMant .leftMant .textMant p {
+            font-size: 18px;
+            color: #000;
+        }
+        .contentMant .leftMant .socialMant {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contentMant .leftMant .socialMant .iconRed {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+        .contentMant .leftMant .socialMant .iconRed:hover {
+            color: #fff;
+            background-color: #272727;
+        }
+        .contentMant .rightMant {
+            width: 100%;
+            min-height: 100vh;
+        }
+        .contentMant .rightMant img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: flex;
+        }
+
+        @media screen and (min-width: 800px) {
+            
+        }
+        @media screen and (max-width: 800px) {
+            .mant .contentMant {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .contentMant .leftMant {
+                min-height: auto;
+                gap: 30px;
+                padding: 40px 20px;
+                border-right: 0px;
+                border-bottom: 5px solid #FB8406;
+            }
+            .contentMant .leftMant img {
+                width: 250px;
+            }
+            .contentMant .leftMant .textMant {
+                gap: 10px;
+            }
+            .contentMant .leftMant .textMant .titleMant {
+                font-size: 20px;
+            }
+            .contentMant .leftMant .textMant p {
+                font-size: 15px;
+            }
+            .contentMant .rightMant {
+                min-height: 400px;
+            }
+        }
+    </style>
+</body>
+</html>
