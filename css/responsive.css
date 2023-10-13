@@ -356,6 +356,58 @@
         border-radius: 15px;
     }
 
+    /* ----FilterFonv--- */
+    .filterFonv .formFilter {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .rowFour {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* ---NewFonv--- */
+    .newFonv {
+        box-shadow: 0 3px 20px #00000029;
+    }
+    .newFonv .textNew {
+        padding: 10px;
+    }
+
+    /* ----cardAudio---- */
+    .cardAudio {
+        padding: 0px 0px 30px 20px;
+    }
+
+    /* ---ModPqr---- */
+    .contentGlobal .modPqr {
+        padding: 15px;
+    }
+    .modPqr .formPqr {
+        gap: 10px;
+    }
+    .modPqr .formPqr .itemPqrTwo,
+    .modPqr .formPqr .itemPqrMed,
+    .modPqr .formPqr .itemPqrThree,
+    .modPqr .formPqr .itemPqrFour {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .modPqr .formPqr .itemSupp input[type="file"] {
+        font-size: 13px;
+    }
+    .modPqr .formPqr .form-check .form-check-label {
+        font-size: 13px;
+    }
+    .modPqr p {
+        font-size: 13px;
+    }
+    .modPqr .linkPro {
+        font-size: 13px;
+    }
+
     /* -----Footer---- */
     .topFooter .contenidoFooter {
         padding: 20px;

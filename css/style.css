@@ -515,6 +515,11 @@ body li {
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
 }
+.contentGlobal .botGlobal {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0px 20px 0px;
+}
 .contentGlobal .rowRec {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -898,11 +903,16 @@ body li {
     }
     .cardGal .imgGal {
         width: 100%;
-        height: 198px;
+        height: 145px;
     }
     .cardGal .imgGal .vidGal {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+    }
+    .cardGal .imgGal .embedGal {
+        width: 100%;
+        height: 145px;
         object-fit: cover;
     }
     .cardGal .textGal {
@@ -1029,6 +1039,7 @@ body li {
 /* ---FilterFonv---- */
 .contentGlobal .filterFonv {
     width: 100%;
+    margin-bottom: 30px;
 }
     .filterFonv .formFilter {
         display: grid;
@@ -1049,20 +1060,189 @@ body li {
         box-shadow: none;
         font-family: var(--fuenteWork);
     }
- 
-/* ---rowFour---- */
-.rowFour {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+
+/* -----ModPqr----- */
+.contentGlobal .modPqr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #ff880054;
+}
+    .modPqr .titlePqr {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--colorNegro);
+        margin-bottom: 30px;
+    }
+    .modPqr .formPqr {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+    .modPqr .formPqr .itemPqr {
+        width: 100%;
+    }
+    .modPqr .formPqr .itemPqrTwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .modPqr .formPqr .itemPqrMed {
+        display: grid;
+        grid-template-columns: 2.1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .modPqr .formPqr .itemPqrThree {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .modPqr .formPqr .itemPqrFour {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .modPqr .formPqr .itemPqr input[type="text"],
+    .modPqr .formPqr .itemPqr input[type="email"],
+    .modPqr .formPqr .itemPqr .form-control,
+    .modPqr .formPqr .itemPqr textarea {
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        padding: 8px 15px;
+        border: none;
+        box-shadow: none;
+        border-radius: 5px;
+        outline: 0;
+    }
+    .modPqr .formPqr .itemSupp {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .modPqr .formPqr .itemSupp .linkSupp {
+        font-size: 13px;
+        color: var(--colorNaranjaOscuro);
+    }
+    .modPqr .formPqr .itemSupp input[type="file"] {
+        font-size: 15px;
+    }
+    .modPqr .formPqr .form-check {
+        margin-bottom: 0px;
+    }
+    .modPqr .formPqr .form-check .form-check-label {
+        font-size: 15px;
+        color: var(--colorNegro);
+    }
+    .modPqr .formPqr .form-check .form-check-label a {
+        color: var(--colorNaranjaOscuro);
+    }
+    .modPqr p {
+        font-size: 16px;
+        color: var(--colorTextPost);
+        font-style: italic;
+    }
+    .modPqr .linkPro {
+        font-size: 16px;
+        color: var(--colorNaranjaOscuro);
+    }
+
+/* ----NewFonv---- */
+.newFonv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newFonv .imgNew {
+    width: 100%;
+    height: 145px;
+}
+.newFonv .imgNew img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newFonv .textNew {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.newFonv .textNew .titleNew a {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--colorNegro);
+    display: flex;
+}
+.newFonv .textNew .linkRead {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--colorNaranjaOscuro);
+    margin-top: 20px;
 }
 
-/* -----Mod-Noticias----- */
+/* ----CardAudio---- */
+.cardAudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 5px 30px 22px;
+    border-left: 4px solid var(--colorNaranjaOscuro);
+}
+.cardAudio .titleAudio {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--colorNegro);
+}
+.cardAudio .titleAudio i {
+    font-size: 15px;
+}
+.cardAudio .audioEmb {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.cardAudio p {
+    font-size: 12px;
+    color: var(--colorTextPost);
+}
+
+/* -----RowGrid----- */
+.rowOne {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .rowTwo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+.rowThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.rowThreeMin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}  
+.rowFour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.rowMarg {
+    margin-bottom: 30px;
+}
+
+/* -----Mod-Noticias----- */
 .rowTwo .colPost {
     display: flex;
     flex-direction: column;
@@ -1225,17 +1405,7 @@ body li {
         border: 2px solid #FFC793;
         color: var(--colorNaranjaOscuro);
     }
-/* ---RowThree--- */
-.contentGlobal .rowThree {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-}
-.contentGlobal .rowThreeMin {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}   
+/* ---RowThree--- */ 
 .contentGlobal .rowMarg {
     margin-bottom: 30px;
 }
@@ -1522,7 +1692,7 @@ body li {
     display: flex;
     flex-direction: column;
     font-family: 'Work Sans', sans-serif;
-    margin-top: 47px;
+    margin-top: 31px;
 }
 .menucavaNew .cabezaInvalmed {
     display: flex;
