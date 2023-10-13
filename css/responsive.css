@@ -2,8 +2,47 @@
     .rowIf .infoIf .imgFonvMob {
         display: none;
     }
+    .centradoHeader .menu {
+        display: none;
+    }
 }
 @media screen and (max-width: 800px) {
+
+    /* ----Header---- */
+    .topnav .linksTop {
+        display: none;
+    }
+    .headernew .centradoHeader .linksMenu {
+        display: none;
+    }
+    .headernew .centradoHeader  {
+        justify-content: flex-start;
+    }
+    .centradoHeader .menu {
+        padding-right: 20px;
+    }
+    .headernew .centradoHeader .logo img {
+        width: 234px;
+        height: 47px;
+    }
+
+    /* ----CoverTemporal---- */
+    .coverTemporal .owl-cover{
+        height: auto;
+    }
+    .coverTemporal .contenidoCover {
+        display: flex;
+        flex-direction: column;
+    }
+    .coverTemporal .contenidoCover .imgCover {
+        max-width: 100%;
+    }
+    .coverTemporal .contenidoCover .imgCover img {
+        height: 210px;
+    }
+    .coverTemporal .contenidoCover .textosCover {
+        padding: 20px 30px;
+    }
 
     /* ---HeadGlobal--- */
     .headGlobal {
@@ -241,5 +280,22 @@
     }
     ._4-u2 {
         border-radius: 15px;
+    }
+
+    /* ---Footer---- */
+    .footernewGob .centradoGovFooter .logoFonv img {
+        width: 150px;
+        height: 30px;
+    }
+    .footernewGob {
+        padding: 10px;
+    }
+    .footernewGob .centradoGovFooter {
+        padding: 10px 0px;
+    }
+    .footernewGob .centradoGovFooter .logosgovb img {
+        width: 90px;
+        height: 17px;
+        margin-left: 7px;
     }
 }
