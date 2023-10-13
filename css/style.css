@@ -1026,6 +1026,37 @@ body li {
             margin-bottom: 12px;
         }
 
+/* ---FilterFonv---- */
+.contentGlobal .filterFonv {
+    width: 100%;
+}
+    .filterFonv .formFilter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+    .filterFonv .formFilter input[type="search"],
+    .filterFonv .formFilter input[type="date"],
+    .filterFonv .formFilter select {
+        height: auto;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid var(--colorBorderCard);
+        color: var(--colorTextPost);
+        outline: 0;
+        box-shadow: none;
+        font-family: var(--fuenteWork);
+    }
+ 
+/* ---rowFour---- */
+.rowFour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 /* -----Mod-Noticias----- */
 .rowTwo {
     display: grid;
