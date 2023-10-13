@@ -43,7 +43,9 @@ body h1, h2, h3, h4 {
 } 
 body button:focus {
     outline: 0;
-
+}
+body li {
+    list-style: none;
 }
 /* ----BtnGlobal----- */
 .btnGlobal {
@@ -120,6 +122,11 @@ body button:focus {
     display: flex;
     justify-content: space-between;
 }
+.topnav img {
+    width:120px;
+    height:auto;
+    display:block 
+}
 .centradoTodo {
     width: 100%;
     max-width: 1120px;
@@ -152,7 +159,6 @@ body button:focus {
     color: #fff;
 }
 .topnav .linksTop .linkOrange a {
-    color: #ee7811;
     font-weight: 600;
 }
 .topnav .linksTop li a:hover {
@@ -176,7 +182,7 @@ body button:focus {
         width: 305px;
     }
     .headernew .centradoHeader .logo img {
-        width: 305px;
+        width: 257px;
         height: 60px;
     }
     .headernew .centradoHeader .linksMenu {
@@ -198,12 +204,25 @@ body button:focus {
         font-weight: bold;
         letter-spacing: -0.5px;
     }
-    /* ---DropdownHeader----- */
-    
-    .dropdown:hover .dropMenu {
-        display: block;
+    .headernew .centradoHeader .linksMenu .linkespecial a {
+        color: #ee7811;
+        font-weight: bold;
+        letter-spacing: -0.5px;
     }
-    .dropHeader:hover .dropGest {
+    .headernew .centradoHeader .linksMenu li .imgLupa {
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+    .headernew .centradoHeader .linksMenu li .imgLupa img {
+        width: 13px;
+    }
+    /* ---DropdownHeader----- */
+    .dropdown:hover .dropMenu {
         display: block;
     }
     .dropHeader .dropMenu {
@@ -299,19 +318,23 @@ body button:focus {
         cursor: pointer;
         outline: none;
         margin: 0 3px;
-        background-color: #fff!important;
+        background-color: #ffffff6e!important;
         border-radius: 50px;
         transition: 0.3s;
     }
     .owl-cover .owl-dot.active {
         height: 25px;
         width: 25px;
-        background-color: #00AEEF!important;
+        background-color: #fff!important;
     }
     /* -----Owl-nav----- */
     .owl-cover .owl-nav.disabled {
         display: inline-flex;
         margin-top: -27px;
+    }
+    .owl-cover button:focus {
+        outline: 0;
+        box-shadow: none;
     }
     .owl-cover .owl-prev,
     .owl-cover .owl-next {
@@ -341,6 +364,7 @@ body button:focus {
         border-radius: 10px 0px 0px 10px;
         transition: 0.3s;
         font-family: 'Quicksand', sans-serif;
+        outline: 0;
     }
     .owl-cover .owl-prev span:hover,
     .owl-cover .owl-next span:hover {
@@ -653,6 +677,9 @@ body button:focus {
     flex-direction: column;
     margin-top: 50px;
 }
+.contentGlobal .modTdNone {
+    margin-top: 0px;
+}
     .modTd .titleTd {
         font-size: 23px;
         font-weight: 700;
@@ -708,6 +735,24 @@ body button:focus {
     }
     .modTd .tableOb .itemTable .itemDate a {
         color: var(--colorNaranjaOscuro);
+    }
+    .modTd .listCont {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .modTd .listCont li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .modTd .listCont li i {
+        font-size: 10px;
+        display: flex;
+    }
+    .modTd .listCont li p {
+        font-size: 16px;
+        color: var(--colorNegro);
     }
 
 /* ---PayMetod---- */
@@ -851,7 +896,7 @@ body button:focus {
     }
     .cardGal .imgGal {
         width: 100%;
-        height: 145px;
+        height: 198px;
     }
     .cardGal .imgGal .vidGal {
         width: 100%;
@@ -1215,36 +1260,7 @@ body button:focus {
         color: var(--colorTextPost);
     }
 
-.footernewGob {
-    background-color: #3366CC;
-    padding: 5px 20px; 
-}
-    .footernewGob .centradoGovFooter {
-        width: 100%;
-        max-width: 1140px;
-        margin: auto;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footernewGob .centradoGovFooter .logoFonv img {
-        width: 280px;
-        height: 56px;
-    }
-    .footernewGob .centradoGovFooter .logosgovb {
-        display: flex;
-        align-items: center;
-    }
-    .footernewGob .centradoGovFooter .logosgovb img {
-        width: 100%;
-        max-width: 140px;
-        height: 25px;
-        margin-left: 20px;
-    }
-    .footernewGob .centradoGovFooter .logosgovb .govstilos {
-        height: 30px;
-    }
+/* ---Footer--- */
 .topFooter {
     background-color: rgba(236, 236, 236, 0.893);
     border-top: 1px solid rgb(239, 239, 239);
@@ -1336,6 +1352,36 @@ body button:focus {
         width: 15px;
         margin: auto;
     }
+.footernewGob {
+    background-color: #3366CC;
+    padding: 5px 20px; 
+}
+    .footernewGob .centradoGovFooter {
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footernewGob .centradoGovFooter .logoFonv img {
+        width: 280px;
+        height: 56px;
+    }
+    .footernewGob .centradoGovFooter .logosgovb {
+        display: flex;
+        align-items: center;
+    }
+    .footernewGob .centradoGovFooter .logosgovb img {
+        width: 100%;
+        max-width: 140px;
+        height: 25px;
+        margin-left: 20px;
+    }
+    .footernewGob .centradoGovFooter .logosgovb .govstilos {
+        height: 30px;
+    }
 .topFooter .footerAyuda {
     width: 100%;
     max-width: 1140px;
@@ -1376,10 +1422,58 @@ body button:focus {
         font-weight: 300;
     }
 
+/* ----ModalBuscador---- */
+.modalBuscador {
+    max-width: 1140px;
+    margin: 200px auto;
+    border: none;
+    background-color: transparent;
+}
+.contenidoBuscador {
+    background-color: transparent;
+    border: none;
+}
+.headerBuscador {
+    background-color: #ee7811;
+    border-bottom: 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.headerBuscador .formBuscador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.headerBuscador .formBuscador input[type="search"] {
+    width: 100%;
+    padding: 13px 10px;
+    border: 0px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+}
+.headerBuscador .formBuscador input[type="search"]:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.headerBuscador .formBuscador .btnBuscador {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 11px;
+    border: 0;
+    border-radius: 5px;
+    width: 28%;
+    cursor: pointer;
+}
+
 /* ----Canva---- */
 .container {
     display: flex;
 }
+
 .off-canvas-menu {
     position: fixed;
     left: -100%; /* Esto oculta el menú fuera del área visible */
@@ -1387,7 +1481,9 @@ body button:focus {
     width: 100%;
     height: 100%;
     transition: left 0.3s ease-in-out;
+    z-index: 99;
 }
+
 .menucavaNew {
     background-color: #fff;
     display: flex;
@@ -1437,6 +1533,7 @@ body button:focus {
 .menucavaNew .menusPrincipal {
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
 .menucavaNew .menusPrincipal li {
     list-style: none;
@@ -1455,7 +1552,16 @@ body button:focus {
 .menucavaNew .menusPrincipal li:hover a {
     color: #fff;
 }
-
+.menucavaNew .menusPrincipal .submenicolap .linksColl {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.menucavaNew .menusPrincipal .submenicolap  .linkDrop {
+    width: 100%;
+    padding: 7px 20px;
+    color: #656566;
+}
 .menu-button {
     color: #333;
     border: none;

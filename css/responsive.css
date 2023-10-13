@@ -7,10 +7,15 @@
     }
 }
 @media screen and (max-width: 800px) {
-
     /* ----Header---- */
     .topnav .linksTop {
         display: none;
+    }
+    .topnav img {
+        width: 70px;
+    }
+    .centradoTodo {
+        padding: 8px 10px;
     }
     .headernew .centradoHeader .linksMenu {
         display: none;
@@ -26,13 +31,13 @@
         height: 47px;
     }
 
-    /* ----CoverTemporal---- */
-    .coverTemporal .owl-cover{
-        height: auto;
-    }
+    /* ----Cover--- */
     .coverTemporal .contenidoCover {
         display: flex;
         flex-direction: column;
+    } 
+    .coverTemporal .owl-cover {
+        height: 450px;
     }
     .coverTemporal .contenidoCover .imgCover {
         max-width: 100%;
@@ -41,7 +46,38 @@
         height: 210px;
     }
     .coverTemporal .contenidoCover .textosCover {
+        max-width: 100%;
+        height: 240px;
         padding: 20px 30px;
+    }
+    .coverTemporal .contenidoCover .textosCover .tituloSlider {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    .coverTemporal .contenidoCover .textosCover .parrafoSlider {
+        font-size: 13px;
+        line-height: 16px; 
+        margin-bottom: 15px;
+    }
+    .owl-cover .owl-dots {
+        max-width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .owl-cover .owl-next {
+        right: 0px;
+    }
+    .owl-cover .owl-prev {
+        left: 0px;
+    }
+    .owl-cover .owl-dot {
+        width: 7px;
+        height: 7px;
+    }
+    .owl-cover .owl-dot.active {
+        width: 18px;
+        height: 18px;
     }
 
     /* ---HeadGlobal--- */
@@ -96,23 +132,56 @@
         font-size: 14px;
         margin-bottom: 10px;
     }
-    .obraFonv .rowOb {
+    .modTd .dateOb {
+        font-size: 13px;
+    }
+    .rowOb {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
     }
-    .obraFonv .rowOb .infoOb .processOb {
+    .rowOb .infoOb .processOb {
         font-size: 14px;
         margin-bottom: 10px;
     }
-    .obraFonv .rowOb .infoOb .porcentOb {
+    .rowOb .infoOb .porcentOb {
         margin-bottom: 10px;
     }
-    .obraFonv .rowOb .infoOb .textProgress {
+    .rowOb .infoOb .textProgress {
         font-size: 14px;
     }
-    .obraFonv .rowOb .infoOb p {
+    .rowOb .infoOb p {
         font-size: 12px;
+    }
+
+    /* ---HeadSingle--- */
+    .contentGlobal .headSingle p {
+        font-size: 13px;
+    }
+
+    /* ---ModTd---- */
+    .modTd .titleTd {
+        font-size: 17px;
+    }
+    .modTd .tableOb .itemTable .firstItem {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .modTd .tableOb .itemTable .itemDate {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+    .modTd .tableOb .itemTableCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.4fr;
+    }
+    .modTd .listCont li {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .modTd .listCont li p {
+        font-size: 13px;
     }
 
     /* ---rowRec---- */
@@ -211,6 +280,10 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    .contentGlobal .rowMarg {
+        display: grid;
+        gap: 10px;
+    }
     .rowThree .cardDest {
         box-shadow: 0 3px 20px #00000029;
     }
@@ -223,6 +296,7 @@
     }
     .rowThree .tabFonv {
         font-size: 12px;
+        padding: 10px;
     }
 
     /* ---RowTwo--- */
@@ -282,10 +356,60 @@
         border-radius: 15px;
     }
 
-    /* ---Footer---- */
+    /* -----Footer---- */
+    .topFooter .contenidoFooter {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+    .topFooter .contenidoFooter .acercayLogo {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .topFooter .contenidoFooter .acercayLogo .acerca .acercaTitulo {
+        font-size: 15px;
+    }
+    .topFooter .contenidoFooter .acercayLogo .logosAcercate .logoFooter img {
+        width: 150px;
+    }
+    .contenidoFooter .rowFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contenidoFooter .rowFooter .colInfo {
+        max-width: 100%;
+    }
+    .contenidoFooter .rowFooter .colInfo .itemInfo {
+        gap: 0;
+    }
+    .contenidoFooter .rowFooter .colInfo .itemInfo .titleCol {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .contenidoFooter .rowFooter .colInfo .itemInfo .subTitleCol {
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    .contenidoFooter .rowFooter .colInfo .itemInfo p {
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+    .contenidoFooter .rowFooter .colInfo .itemInfo .linkFooter {
+        font-size: 13px;
+    }
+    .topFooter .footerAyuda {
+        padding: 20px;
+    }
+    .footerAyuda .listAyuda p {
+        font-size: 14px;
+        line-height: 13px;
+    }
     .footernewGob .centradoGovFooter .logoFonv img {
         width: 150px;
         height: 30px;
+    }
+    .footernewGob .centradoGovFooter .logosgovb .govstilos {
+        height: 19px;
     }
     .footernewGob {
         padding: 10px;

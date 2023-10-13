@@ -1,6 +1,6 @@
 $('.carouselGal').owlCarousel({
     loop:true,
-    margin:20,
+    margin:40,
     dots: true,
     dotsEach: true,
     nav:true,
@@ -12,7 +12,7 @@ $('.carouselGal').owlCarousel({
             items:3
         },
         1000:{
-            items:4
+            items:3
         }
     }
 })
