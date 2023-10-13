@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----------Font-awesome-icons----------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Sala de prensa | Fonvalmed</title>
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/owl.carousel.min.css?v=1.1">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css?v=1.1">
+    <link rel="stylesheet" href="css/responsive.css?v=1.1">
+</head>
+<body>
+
+<!-- ---HeadMenu--- -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+</style>
+
+<div class="topnav">
+    <div class="centradoTodo">
+        <div class="logoGov">
+            <a href="https://www.gov.co/" target="_blank"><img src="https://www.fonvalmed.gov.co/wp-content/uploads/2023/08/govco-logo.png" alt=""></a>
+        </div>
+        <div class="linksTop">
+            <div class="dropdown">
+                <li class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">Idioma</a></li>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    
+                </div>
+            </div>
+            <div class="dropdown dropHeader">
+                <li class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">Atención al ciudadano</a></li>
+                <div class="dropdown-menu dropMenu" aria-labelledby="dropdownMenuLink">
+                    <div class="rowDrop">
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="titleDrop">Servicios de atención</a>
+                            <a href="https://www.fonvalmed.gov.co/canales-de-atencion/" class="linkDrop">Canales de atención</a>
+                            <a href="https://www.fonvalmed.gov.co/tramites-y-servicios-ante-la-entidad/" class="linkDrop">Trámites y servicios</a>
+                            <a href="https://www.fonvalmed.gov.co/preguntas-frecuentes/" class="linkDrop">Preguntas frecuentes</a>
+                            <a href="https://www.fonvalmed.gov.co/directorio/" class="linkDrop">Directorio</a>
+                            <a href="https://www.fonvalmed.gov.co/escribenos/" class="linkDrop">Escríbenos</a>
+                            <a href="https://www.fonvalmed.gov.co/documento-de-cobro/" class="linkDrop">Documento de cobro</a>
+                            <a href="https://www.fonvalmed.gov.co/consulta-financiera/" class="linkDrop">Consulta financiera</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="titleDrop">Seguimiento de notificaciones</a>
+                            <a href="https://www.fonvalmed.gov.co/notificaciones/" class="linkDrop">Notificaciones</a>
+                            <a href="https://www.fonvalmed.gov.co/notificaciones-cobro-coactivo/" class="linkDrop">Notificaciones cobro coactivo</a>
+                            <a href="https://www.fonvalmed.gov.co/auto-que-liquida-el-credito/" class="linkDrop">Auto que liquida el crédito</a>
+                            <a href="https://www.fonvalmed.gov.co/notificaciones-rose/" class="linkDrop">Notificaciones ROSE</a>
+                            <a href="https://www.fonvalmed.gov.co/notificaciones-autos-que-vincula-herederos/" class="linkDrop">Notificaciones autos que vincula herederos</a>
+                            <a href="https://www.fonvalmed.gov.co/notificaciones-herederos-secuestros/" class="linkDrop">Notificaciones herederos secuestros</a>
+                            <a href="https://www.fonvalmed.gov.co/notificaciones-secuestros-contribuyentes/" class="linkDrop">Notificaciones secuestros contribuyentes</a>
+                            <a href="https://www.fonvalmed.gov.co/terminaciones-y-archivo/" class="linkDrop">Seguimiento PQRSD</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#informacion-adicional" class="linkDrop">Terminaciones y Archivo</a>
+                            <a href="https://www.fonvalmed.gov.co/mandamientos-de-pago-de-los-fallecidos/" class="linkDrop">Mandamientos de pago de los fallecidos</a>
+                            <a href="https://www.fonvalmed.gov.co/resoluciones-de-apropiacion-de-titulos/" class="linkDrop">Resoluciones de Apropiación de títulos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown dropHeader">
+                <li class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">Transparencia</a></li>
+                <div class="dropdown-menu dropMenu dropMenuMax" aria-labelledby="dropdownMenuLink">
+                    <div class="rowDrop rowDropMax">
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/" class="titleDrop">Mecanismos de contacto con el sujeto obligado</a>
+                            <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#mecanismos-para-la-atencion-al-ciudadano" class="linkDrop">Mecanismos para la atención al ciudadano</a>
+                            <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#localizacion-fisica-sucursales-o-regionales" class="linkDrop">Localización, física, sucursales o regionales, horarios y días de atenció al público</a>
+                            <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#correo-electronico-para-notificaciones-judiciales" class="linkDrop">Correo electrónico para notificaciones judiciales</a>
+                            <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#politicas-de-seguridad-de-la-informacion-del-sitio-web" class="linkDrop">Políticas de la seguridad del sitio web y protección de datos personales</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/" class="titleDrop">Información de interés</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#datos-abiertos" class="linkDrop">Datos abiertos</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#estudios-investigaciones-y-otras-publicaciones" class="linkDrop">Estudios, investigaciones y otras publicaciones</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#convocatorias" class="linkDrop">Convocatorias</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#preguntas-y-respuestas-frecuentes" class="linkDrop">Preguntas y respuestas frecuentes</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#glosario" class="linkDrop">Glosario</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#noticias" class="linkDrop">Noticias</a>
+                            <a href="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.fonvalmed.gov.co/wp-content/uploads/2020/11/pqrs.jpg" class="linkDrop">Calendario de actividades</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#informacion-para-ninas-ninos-y-adolescentes" class="linkDrop">Información para niñas, niños y adolecentes</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#informacion-adicional" class="linkDrop">Información adicional</a>
+                            <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#1640630772110-88e95e78-2386" class="linkDrop">Información para mujeres</a>
+                            <a href="https://www.fonvalmed.gov.co/estructura-organica-y-talento-humano/" class="linkDrop">Estructura orgánica y talento humano</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/normatividad/" class="titleDrop">Normatividad</a>
+                            <a href="https://fonvalmed.gov.co/normatividad/" class="linkDrop">Sujetos obligados del orden territorial</a>
+                            <a href="https://www.suin-juriscol.gov.co/" class="linkDrop">Sistema único de Información normativa</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/presupuesto/" class="titleDrop">Presupuesto</a>
+                            <a href="https://www.fonvalmed.gov.co/presupuesto/#presupuesto-general-asignado" class="linkDrop">Presupuesto general asignado</a>
+                            <a href="https://www.fonvalmed.gov.co/presupuesto/#ejecucion-presupuestal-historica-anual" class="linkDrop">Ejecución presupuestal histórica anual</a>
+                            <a href="https://www.fonvalmed.gov.co/presupuesto/#estados-financieros" class="linkDrop">Estados financieros</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/planeacion/" class="titleDrop">Planeación</a>
+                            <a href="https://www.fonvalmed.gov.co/planeacion/#politicas-lineamientos-y-manuales" class="linkDrop">Políticas, lineamientos y manuales</a>
+                            <a href="https://www.fonvalmed.gov.co/planeacion/#plan-de-accion-plan-de-gasto-publico" class="linkDrop">Plan de acción / Plan de gasto público</a>
+                            <a href="https://www.fonvalmed.gov.co/planeacion/#programas-y-proyectos-en-ejecucion" class="linkDrop">Programas y proyectos en ejecución</a>
+                            <a href="https://www.fonvalmed.gov.co/planeacion/#metas-objetivos-e-indicadores-de-gestion-y-o-desempeno" class="linkDrop">Metas, objetivos e indicadores de gestión y/o desempeño</a>
+                            <a href="https://www.fonvalmed.gov.co/planeacion/#participacion-en-la-formulacion-de-politicas" class="linkDrop">Participación en la formulación de políticas</a>
+                            <a href="https://www.fonvalmed.gov.co/planeacion/#informes-de-empalme" class="linkDrop">Informes de empalme</a>
+                            <a href="https://fonvalmed.gov.co/planeacion/#1636491802967-ae379c22-ca0d" class="linkDrop">Informes de gestión</a>
+                            <a href="https://fonvalmed.gov.co/planeacion/#1640808324879-986f751a-7b83" class="linkDrop">agenda regulatoria</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/control/" class="titleDrop">Control</a>
+                            <a href="https://www.fonvalmed.gov.co/control/#informes-de-gestion-evaluacion-y-auditoria" class="linkDrop">Informes de gestión, evaluación y auditoría</a>
+                            <a href="https://www.fonvalmed.gov.co/control/#reportes-de-control-interno" class="linkDrop">Reportes de control interno</a>
+                            <a href="https://www.fonvalmed.gov.co/control/#planes-de-mejoramiento" class="linkDrop">Planes de mejoramiento</a>
+                            <a href="https://www.fonvalmed.gov.co/control/#entes-de-control-que-vigilan-a-la-entidad-y-mecanismos-de-supervision" class="linkDrop">entes de control de vigilan a la entidad y mecanismos de supervición</a>
+                            <a href="https://www.fonvalmed.gov.co/control/#informacion-para-poblacion-vulnerable" class="linkDrop">Información para población vulnerable</a>
+                            <a href="https://www.fonvalmed.gov.co/control/#defensa-judicial" class="linkDrop">Defensa judicial</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/contratacion/" class="titleDrop">Contratación</a>
+                            <a href="https://www.fonvalmed.gov.co/contratacion/#publicacion-de-la-informaci%C3%B3n-contractual" class="linkDrop">Publicación de la información contractual</a>
+                            <a href="https://www.fonvalmed.gov.co/contratacion/#publicacion-de-la-ejecucion-de-contratos" class="linkDrop">Publicación de la ejecución de contratos</a>
+                            <a href="https://www.fonvalmed.gov.co/contratacion/#publicacion-de-procedimientos-lineamientos-y-politicas-en-materia-de-adquisicion-y-compras" class="linkDrop">Publicación de procedimientos, lineamientos y políticas en materia de adquisición y compras</a>
+                            <a href="https://www.fonvalmed.gov.co/contratacion/#plan-anual-de-adquisiciones" class="linkDrop">Plan anual de adquisiciones</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/tramites-y-servicios/" class="titleDrop">Trámites y servicios</a>
+                            <a href="https://www.fonvalmed.gov.co/tramites-y-servicios/#tramites-y-servicios" class="linkDrop">Trámites y servicios</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/" class="titleDrop">Instrumentación de gestión de información pública</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#registro-de-activos-de-informacion" class="linkDrop">Registro de activo de información</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#indice-de-informacion-clasificada-y-reservada" class="linkDrop">Índice de información clasificada y reservada</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#esquema-de-publicacion-de-informacion" class="linkDrop">Esquema de publicación de información</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#programa-de-gestion-documental" class="linkDrop">Programa de gestión documental</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#costos-de-reproduccion" class="linkDrop">Tablas de retención documental</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#registro-de-publicaciones" class="linkDrop">Registro de publicaciones</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#costos-de-reproduccion" class="linkDrop">Costos de reproducción</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#mecanismos-para-presentar-quejas-y-reclamos-en-relacion-con-omisiones-o-acciones-del-sujeto-obligado" class="linkDrop">Mecanismos para presentar quejas y reclamos en relación con omisiones o acciones del sujeto obligado</a>
+                            <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#informe-de-peticiones-quejas-reclamos-denuncias-y-solicitudes-de-acceso-a-la-informacion" class="linkDrop">Informe de Peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/transparencia-pasiva/" class="titleDrop">Transparencia Pasiva</a>
+                            <a href="https://www.fonvalmed.gov.co/transparencia-pasiva/#medios-de-seguimiento-para-la-consulta-del-estado-de-las-solicitudes-de-informacion-publica" class="linkDrop">Medios de seguimiento para la consulta del estado de las solicitudes de información pública</a>
+                            <a href="https://www.fonvalmed.gov.co/transparencia-pasiva/#formulario-para-la-recepcion-de-solicitudes-de-informacion-publica" class="linkDrop">Formulario para la recepción de solicitudes de información pública</a>
+                            <a href="https://fonvalmed.gov.co/transparencia-pasiva/#1640783872938-c293d29f-a179" class="linkDrop">Gaceta oficial</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/criterio-diferencial-de-accesibilidad/" class="titleDrop">Criterio Diferencial de Accesibilidad</a>
+                            <a href="https://www.fonvalmed.gov.co/criterio-diferencial-de-accesibilidad/#formato-alternativo-para-grupos-etnicos-y-culturales" class="linkDrop">Formato alternativo para grupos étnicos y culturales</a>
+                            <a href="https://www.fonvalmed.gov.co/criterio-diferencial-de-accesibilidad/#accesibilidad-en-medios-electronicos-para-la-poblacion-en-situacion-de-discapacidad" class="linkDrop">Accesibilidad en medios electrónicos para la población en situación de discapacidad</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/proteccion-de-datos-personales/" class="titleDrop">Protección de Datos Personales</a>
+                            <a href="https://www.fonvalmed.gov.co/proteccion-de-datos-personales/#cumplimiento-del-regimen-general-de-proteccion-de-datos-personales" class="linkDrop">Cumplimiento del régimen general de protección de datos personales</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="titleDrop">Fonvalmed</a>
+                            <a href="https://www.fonvalmed.gov.co/que-es-fonvalmed/" class="linkDrop">¿Qué es fonvalmed?</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/" class="titleDrop">Dirección y administración</a>
+                            <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#consejo-municipal-de-valorizaci%C3%B3n" class="linkDrop">Consejo Municipal de Valorización</a>
+                            <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#consejo-directivo-fonvalmed" class="linkDrop">Consejo Directivo Fonvalmed</a>
+                            <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#direccion-general" class="linkDrop">Dirección General</a>
+                            <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#subdireccion-administrativa-y-financiera" class="linkDrop">Subdirección Administrativa y Financiera</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li><a href="https://www.fonvalmed.gov.co/participa/">Participa</a></li>
+            <li><a href="https://www.fonvalmed.gov.co/escribenos/">Escríbenos</a></li>
+            <li class="linkOrange"><a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/">PQRSD</a></li>
+        </div>
+    </div>
+</div>
+<header class="headernew">
+    <div class="centradoHeader">
+        <div class="menu">
+            <button class="menu-button"><img src="https://www.fonvalmed.gov.co/wp-content/uploads/2023/08/menu.png" alt="Menu"></button>
+        </div>
+        <div class="logo">
+            <img src="https://www.fonvalmed.gov.co/wp-content/uploads/2023/08/logo-fvm-2-e1693432633921.png" alt="Logo">
+        </div>
+        <div class="linksMenu">
+            <div class="dropdown dropHeader">
+                <li class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">Valorización</a></li>
+                <div class="dropdown-menu dropMenu" aria-labelledby="dropdownMenuLink">
+                    <div class="rowDrop">
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="titleDrop">¿Qué es la contribución de valorización?</a>
+                            <a href="https://www.fonvalmed.gov.co/conceptos-fundamentales-de-la-valorizacion/" class="linkDrop">Conceptos fundamentales de la valorización</a>
+                            <a href="https://www.fonvalmed.gov.co/preguntas-generales-sobre-la-valorizacion/" class="linkDrop">Preguntas generales sobre la valorización</a>
+                            <a href="https://www.fonvalmed.gov.co/principios/" class="linkDrop">Principios</a>
+                            <a href="https://www.fonvalmed.gov.co/etapas-de-los-proyectos-de-valorizacion/" class="linkDrop">Etapas de los proyectos de valorización </a>
+                            <a href="https://www.fonvalmed.gov.co/glosario/" class="linkDrop">Glosario</a>
+                            <a href="https://www.fonvalmed.gov.co/proyectos-historicos-medellin/" class="linkDrop">Proyectos hístoricos medellín</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="titleDrop">Proyectos valorización el Poblado</a>
+                            <a href="https://www.fonvalmed.gov.co/proyecto-de-valorizacion-obras/" class="linkDrop">Obras</a>
+                            <a href="https://www.fonvalmed.gov.co/en-que-consiste/" class="linkDrop">En qué consiste</a>
+                            <a href="https://www.fonvalmed.gov.co/historia-del-proyecto/" class="linkDrop">Historia del proyecto </a>
+                            <a href="https://www.fonvalmed.gov.co/resuelve-tus-dudas-sobre-el-proyecto/" class="linkDrop">Resuleve tus dudas sobre el proyecto</a>
+                            <a href="https://www.fonvalmed.gov.co/mitos-y-realidades-sobre-el-proyecto/" class="linkDrop">Mitos y realidades sobre el proyecto</a>
+                            <a href="https://www.fonvalmed.gov.co/etapas-y-estudios/" class="linkDrop">Etapas y estudios</a>
+                            <a href="https://www.fonvalmed.gov.co/datos-principales-del-proyecto/" class="linkDrop">Datos principales del proyecto</a>
+                            <a href="https://www.fonvalmed.gov.co/junta-de-representantes-de-los-propietarios/" class="linkDrop">Junta de representantes de los propietarios</a>
+                            <a href="https://www.fonvalmed.gov.co/estado-del-proyecto/" class="linkDrop">Estado del proyecto</a>
+                            <a href="https://fonvalmed.gov.co/wp-content/uploads/2020/12/mapa-2016-ABRIL.pdf" class="linkDrop">Descarga el mapa del proyecto</a>
+                            <a href="https://www.fonvalmed.gov.co/libro-proyecto-valorizacion-el-poblado/" class="linkDrop">Libro proyecto valorización El Poblado</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">Gestión Social</a></li>
+                <div class="dropdown-menu dropMenu" aria-labelledby="dropdownMenuLink">
+                    <div class="rowDrop rowDropMin">
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/que-es/" class="titleDrop">¿Qué es?</a>
+                            <a href="https://www.fonvalmed.gov.co/cifras-del-la-gestion-social/" class="linkDrop">Cifras de la gestión social</a>
+                            <a href="https://www.fonvalmed.gov.co/testimonios/" class="linkDrop">Testimonios</a>
+                            <a href="https://www.fonvalmed.gov.co/como-solicitar-apoyo/" class="linkDrop">Cómo solicitar apoyo</a>
+                            <a href="https://www.fonvalmed.gov.co/grupo-de-intereses/" class="linkDrop">Grupos de interés</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown dropHeader">
+                <li class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="#">Comunicación</a></li>
+                <div class="dropdown-menu dropMenu" aria-labelledby="dropdownMenuLink">
+                    <div class="rowDrop">
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="titleDrop">De tu interés</a>
+                            <a href="https://www.fonvalmed.gov.co/sala-de-prensa/" class="linkDrop">Sala de prensa</a>
+                            <a href="https://www.fonvalmed.gov.co/noticias/" class="linkDrop">Noticias</a>
+                            <a href="https://www.fonvalmed.gov.co/publicaciones/" class="linkDrop">Publicaciones</a>
+                            <a href="https://www.fonvalmed.gov.co/en-los-medios/" class="linkDrop">Fonvalmed en los medios</a>
+                            <a href="https://www.fonvalmed.gov.co/presentaciones/" class="linkDrop">Presentaciones</a>
+                            <a href="https://www.fonvalmed.gov.co/?page_id=1226" class="linkDrop">Formatos Fonvalmed</a>
+                        </div>
+                        <div class="colDrop">
+                            <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/" class="titleDrop">Gestión de talento humano</a>
+                            <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/#bienvenidos-a-la-familia-fonvalmed" class="linkDrop">Bienvenidos a la familia fonvalmed</a>
+                            <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/#istema-sg-sst" class="linkDrop">Sistema SG-SST</a>
+                            <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/#reportes" class="linkDrop">Reportes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <li class="linkespecial"><a href="https://www.fonvalmed.gov.co/tramites-y-servicios-ante-la-entidad/">Trámites y servicios</a></li>
+            <li class="linkespecial"><a href="https://www.fonvalmed.gov.co/documento-de-cobro/">Documento de cobro</a></li>
+            <li data-toggle="modal" data-target="#exampleModal"><a href="#" class="imgLupa"><img src="img/icon-lupa.png" alt=""></a></li>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Button trigger modal -->  
+    <!-- Modal-Buscador-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modalBuscador">
+        <div class="modal-content contenidoBuscador">
+        <div class="modal-header headerBuscador">
+            <form action="" class="formBuscador">
+            <input type="search" name="" id="" placeholder="Buscar...">
+            <button type="submit" class="btnBuscador">Buscar</button>
+            </form>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">X</span>
+            </button>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="off-canvas-menu menucavaNew">
+        <div class="cabezaInvalmed">
+            <img src="img/logo-fonvalmed.png" alt="Logo">
+            <button class="close-button">X</button>
+        </div>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar...">
+            <input type="button" value="Buscar" class="btnBuscador">
+        </div>
+        <div class="menusPrincipal">
+            <li><a data-toggle="collapse" href="#itemmenumobile1" aria-expanded="false" aria-controls="itemmenumobile1">Atención al ciudadano</a></li>
+            <div class="collapse submenicolap" id="itemmenumobile1">
+                <div class="linksColl">
+                    <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="linkDrop">Servicios de atención</a>
+                    <a href="https://www.fonvalmed.gov.co/canales-de-atencion/" class="linkDrop">Canales de atención</a>
+                    <a href="https://www.fonvalmed.gov.co/tramites-y-servicios-ante-la-entidad/" class="linkDrop">Trámites y servicios</a>
+                    <a href="https://www.fonvalmed.gov.co/preguntas-frecuentes/" class="linkDrop">Preguntas frecuentes</a>
+                    <a href="https://www.fonvalmed.gov.co/directorio/" class="linkDrop">Directorio</a>
+                    <a href="https://www.fonvalmed.gov.co/escribenos/" class="linkDrop">Escríbenos</a>
+                    <a href="https://www.fonvalmed.gov.co/documento-de-cobro/" class="linkDrop">Documento de cobro</a>
+                    <a href="https://www.fonvalmed.gov.co/consulta-financiera/" class="linkDrop">Consulta financiera</a>
+                    <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="linkDrop">Seguimiento de notificaciones</a>
+                    <a href="https://www.fonvalmed.gov.co/notificaciones/" class="linkDrop">Notificaciones</a>
+                    <a href="https://www.fonvalmed.gov.co/notificaciones-cobro-coactivo/" class="linkDrop">Notificaciones cobro coactivo</a>
+                    <a href="https://www.fonvalmed.gov.co/auto-que-liquida-el-credito/" class="linkDrop">Auto que liquida el crédito</a>
+                    <a href="https://www.fonvalmed.gov.co/notificaciones-rose/" class="linkDrop">Notificaciones ROSE</a>
+                    <a href="https://www.fonvalmed.gov.co/notificaciones-autos-que-vincula-herederos/" class="linkDrop">Notificaciones autos que vincula herederos</a>
+                    <a href="https://www.fonvalmed.gov.co/notificaciones-herederos-secuestros/" class="linkDrop">Notificaciones herederos secuestros</a>
+                    <a href="https://www.fonvalmed.gov.co/notificaciones-secuestros-contribuyentes/" class="linkDrop">Notificaciones secuestros contribuyentes</a>
+                    <a href="https://www.fonvalmed.gov.co/terminaciones-y-archivo/" class="linkDrop">Seguimiento PQRSD</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#informacion-adicional" class="linkDrop">Terminaciones y Archivo</a>
+                    <a href="https://www.fonvalmed.gov.co/mandamientos-de-pago-de-los-fallecidos/" class="linkDrop">Mandamientos de pago de los fallecidos</a>
+                    <a href="https://www.fonvalmed.gov.co/resoluciones-de-apropiacion-de-titulos/" class="linkDrop">Resoluciones de Apropiación de títulos</a>
+                </div>
+            </div>
+            <li><a data-toggle="collapse" href="#itemmenumobile2" aria-expanded="false" aria-controls="itemmenumobile2">Transparencia</a></li>
+            <div class="collapse submenicolap" id="itemmenumobile2">
+                <div class="linksColl">
+                    <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/" class="linkDrop">Mecanismos de contacto con el sujeto obligado</a>
+                    <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#mecanismos-para-la-atencion-al-ciudadano" class="linkDrop">Mecanismos para la atención al ciudadano</a>
+                    <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#localizacion-fisica-sucursales-o-regionales" class="linkDrop">Localización, física, sucursales o regionales, horarios y días de atenció al público</a>
+                    <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#correo-electronico-para-notificaciones-judiciales" class="linkDrop">Correo electrónico para notificaciones judiciales</a>
+                    <a href="https://www.fonvalmed.gov.co/mecanismos-de-contacto-con-el-sujeto-obligado/#politicas-de-seguridad-de-la-informacion-del-sitio-web" class="linkDrop">Políticas de la seguridad del sitio web y protección de datos personales</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/" class="linkDrop">Información de interés</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#datos-abiertos" class="linkDrop">Datos abiertos</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#estudios-investigaciones-y-otras-publicaciones" class="linkDrop">Estudios, investigaciones y otras publicaciones</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#convocatorias" class="linkDrop">Convocatorias</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#preguntas-y-respuestas-frecuentes" class="linkDrop">Preguntas y respuestas frecuentes</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#glosario" class="linkDrop">Glosario</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#noticias" class="linkDrop">Noticias</a>
+                    <a href="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img/https://www.fonvalmed.gov.co/wp-content/uploads/2020/11/pqrs.jpg" class="linkDrop">Calendario de actividades</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#informacion-para-ninas-ninos-y-adolescentes" class="linkDrop">Información para niñas, niños y adolecentes</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#informacion-adicional" class="linkDrop">Información adicional</a>
+                    <a href="https://www.fonvalmed.gov.co/informacion-de-interes/#1640630772110-88e95e78-2386" class="linkDrop">Información para mujeres</a>
+                    <a href="https://www.fonvalmed.gov.co/estructura-organica-y-talento-humano/" class="linkDrop">Estructura orgánica y talento humano</a>
+                    <a href="https://www.fonvalmed.gov.co/normatividad/" class="linkDrop">Normatividad</a>
+                    <a href="https://fonvalmed.gov.co/normatividad/" class="linkDrop">Sujetos obligados del orden territorial</a>
+                    <a href="https://www.suin-juriscol.gov.co/" class="linkDrop">Sistema único de Información normativa</a>
+                    <a href="https://www.fonvalmed.gov.co/presupuesto/" class="linkDrop">Presupuesto</a>
+                    <a href="https://www.fonvalmed.gov.co/presupuesto/#presupuesto-general-asignado" class="linkDrop">Presupuesto general asignado</a>
+                    <a href="https://www.fonvalmed.gov.co/presupuesto/#ejecucion-presupuestal-historica-anual" class="linkDrop">Ejecución presupuestal histórica anual</a>
+                    <a href="https://www.fonvalmed.gov.co/presupuesto/#estados-financieros" class="linkDrop">Estados financieros</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/" class="linkDrop">Planeación</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/#politicas-lineamientos-y-manuales" class="linkDrop">Políticas, lineamientos y manuales</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/#plan-de-accion-plan-de-gasto-publico" class="linkDrop">Plan de acción / Plan de gasto público</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/#programas-y-proyectos-en-ejecucion" class="linkDrop">Programas y proyectos en ejecución</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/#metas-objetivos-e-indicadores-de-gestion-y-o-desempeno" class="linkDrop">Metas, objetivos e indicadores de gestión y/o desempeño</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/#participacion-en-la-formulacion-de-politicas" class="linkDrop">Participación en la formulación de políticas</a>
+                    <a href="https://www.fonvalmed.gov.co/planeacion/#informes-de-empalme" class="linkDrop">Informes de empalme</a>
+                    <a href="https://fonvalmed.gov.co/planeacion/#1636491802967-ae379c22-ca0d" class="linkDrop">Informes de gestión</a>
+                    <a href="https://fonvalmed.gov.co/planeacion/#1640808324879-986f751a-7b83" class="linkDrop">agenda regulatoria</a>
+                    <a href="https://www.fonvalmed.gov.co/control/" class="linkDrop">Control</a>
+                    <a href="https://www.fonvalmed.gov.co/control/#informes-de-gestion-evaluacion-y-auditoria" class="linkDrop">Informes de gestión, evaluación y auditoría</a>
+                    <a href="https://www.fonvalmed.gov.co/control/#reportes-de-control-interno" class="linkDrop">Reportes de control interno</a>
+                    <a href="https://www.fonvalmed.gov.co/control/#planes-de-mejoramiento" class="linkDrop">Planes de mejoramiento</a>
+                    <a href="https://www.fonvalmed.gov.co/control/#entes-de-control-que-vigilan-a-la-entidad-y-mecanismos-de-supervision" class="linkDrop">entes de control de vigilan a la entidad y mecanismos de supervición</a>
+                    <a href="https://www.fonvalmed.gov.co/control/#informacion-para-poblacion-vulnerable" class="linkDrop">Información para población vulnerable</a>
+                    <a href="https://www.fonvalmed.gov.co/control/#defensa-judicial" class="linkDrop">Defensa judicial</a>
+                    <a href="https://www.fonvalmed.gov.co/contratacion/" class="linkDrop">Contratación</a>
+                    <a href="https://www.fonvalmed.gov.co/contratacion/#publicacion-de-la-informaci%C3%B3n-contractual" class="linkDrop">Publicación de la información contractual</a>
+                    <a href="https://www.fonvalmed.gov.co/contratacion/#publicacion-de-la-ejecucion-de-contratos" class="linkDrop">Publicación de la ejecución de contratos</a>
+                    <a href="https://www.fonvalmed.gov.co/contratacion/#publicacion-de-procedimientos-lineamientos-y-politicas-en-materia-de-adquisicion-y-compras" class="linkDrop">Publicación de procedimientos, lineamientos y políticas en materia de adquisición y compras</a>
+                    <a href="https://www.fonvalmed.gov.co/contratacion/#plan-anual-de-adquisiciones" class="linkDrop">Plan anual de adquisiciones</a>
+                    <a href="https://www.fonvalmed.gov.co/tramites-y-servicios/" class="linkDrop">Trámites y servicios</a>
+                    <a href="https://www.fonvalmed.gov.co/tramites-y-servicios/#tramites-y-servicios" class="linkDrop">Trámites y servicios</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/" class="linkDrop">Instrumentación de gestión de información pública</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#registro-de-activos-de-informacion" class="linkDrop">Registro de activo de información</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#indice-de-informacion-clasificada-y-reservada" class="linkDrop">Índice de información clasificada y reservada</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#esquema-de-publicacion-de-informacion" class="linkDrop">Esquema de publicación de información</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#programa-de-gestion-documental" class="linkDrop">Programa de gestión documental</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#costos-de-reproduccion" class="linkDrop">Tablas de retención documental</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#registro-de-publicaciones" class="linkDrop">Registro de publicaciones</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#costos-de-reproduccion" class="linkDrop">Costos de reproducción</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#mecanismos-para-presentar-quejas-y-reclamos-en-relacion-con-omisiones-o-acciones-del-sujeto-obligado" class="linkDrop">Mecanismos para presentar quejas y reclamos en relación con omisiones o acciones del sujeto obligado</a>
+                    <a href="https://www.fonvalmed.gov.co/instrumentos-de-gestion-de-informacion-publica/#informe-de-peticiones-quejas-reclamos-denuncias-y-solicitudes-de-acceso-a-la-informacion" class="linkDrop">Informe de Peticiones, quejas, reclamos, denuncias y solicitudes de acceso a la información</a>
+                    <a href="https://www.fonvalmed.gov.co/transparencia-pasiva/" class="linkDrop">Transparencia Pasiva</a>
+                    <a href="https://www.fonvalmed.gov.co/transparencia-pasiva/#medios-de-seguimiento-para-la-consulta-del-estado-de-las-solicitudes-de-informacion-publica" class="linkDrop">Medios de seguimiento para la consulta del estado de las solicitudes de información pública</a>
+                    <a href="https://www.fonvalmed.gov.co/transparencia-pasiva/#formulario-para-la-recepcion-de-solicitudes-de-informacion-publica" class="linkDrop">Formulario para la recepción de solicitudes de información pública</a>
+                    <a href="https://fonvalmed.gov.co/transparencia-pasiva/#1640783872938-c293d29f-a179" class="linkDrop">Gaceta oficial</a>
+                    <a href="https://www.fonvalmed.gov.co/criterio-diferencial-de-accesibilidad/" class="linkDrop">Criterio Diferencial de Accesibilidad</a>
+                    <a href="https://www.fonvalmed.gov.co/criterio-diferencial-de-accesibilidad/#formato-alternativo-para-grupos-etnicos-y-culturales" class="linkDrop">Formato alternativo para grupos étnicos y culturales</a>
+                    <a href="https://www.fonvalmed.gov.co/criterio-diferencial-de-accesibilidad/#accesibilidad-en-medios-electronicos-para-la-poblacion-en-situacion-de-discapacidad" class="linkDrop">Accesibilidad en medios electrónicos para la población en situación de discapacidad</a>
+                    <a href="https://www.fonvalmed.gov.co/proteccion-de-datos-personales/" class="linkDrop">Protección de Datos Personales</a>
+                    <a href="https://www.fonvalmed.gov.co/proteccion-de-datos-personales/#cumplimiento-del-regimen-general-de-proteccion-de-datos-personales" class="linkDrop">Cumplimiento del régimen general de protección de datos personales</a>
+                    <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="linkDrop">Fonvalmed</a>
+                    <a href="https://www.fonvalmed.gov.co/que-es-fonvalmed/" class="linkDrop">¿Qué es fonvalmed?</a>
+                    <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/" class="linkDrop">Dirección y administración</a>
+                    <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#consejo-municipal-de-valorizaci%C3%B3n" class="linkDrop">Consejo Municipal de Valorización</a>
+                    <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#consejo-directivo-fonvalmed" class="linkDrop">Consejo Directivo Fonvalmed</a>
+                    <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#direccion-general" class="linkDrop">Dirección General</a>
+                    <a href="https://www.fonvalmed.gov.co/direccion-y-administracion/#subdireccion-administrativa-y-financiera" class="linkDrop">Subdirección Administrativa y Financiera</a>
+                </div>
+            </div>
+            <li><a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/">Participa</a></li>
+            <li><a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/">Escríbenos</a></li>
+            <li><a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/">PQRSD</a></li>
+            <li><a data-toggle="collapse" href="#itemmenumobile3" aria-expanded="false" aria-controls="itemmenumobile3">Valorización</a></li>
+            <div class="collapse submenicolap" id="itemmenumobile3">
+                <div class="linksColl">
+                    <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="linkDrop">¿Qué es la contribución de valorización?</a>
+                    <a href="https://www.fonvalmed.gov.co/conceptos-fundamentales-de-la-valorizacion/" class="linkDrop">Conceptos fundamentales de la valorización</a>
+                    <a href="https://www.fonvalmed.gov.co/preguntas-generales-sobre-la-valorizacion/" class="linkDrop">Preguntas generales sobre la valorización</a>
+                    <a href="https://www.fonvalmed.gov.co/principios/" class="linkDrop">Principios</a>
+                    <a href="https://www.fonvalmed.gov.co/etapas-de-los-proyectos-de-valorizacion/" class="linkDrop">Etapas de los proyectos de valorización </a>
+                    <a href="https://www.fonvalmed.gov.co/glosario/" class="linkDrop">Glosario</a>
+                    <a href="https://www.fonvalmed.gov.co/proyectos-historicos-medellin/" class="linkDrop">Proyectos hístoricos medellín</a>
+                    <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="linkDrop">Proyectos valorización el Poblado</a>
+                    <a href="https://www.fonvalmed.gov.co/proyecto-de-valorizacion-obras/" class="linkDrop">Obras</a>
+                    <a href="https://www.fonvalmed.gov.co/en-que-consiste/" class="linkDrop">En qué consiste</a>
+                    <a href="https://www.fonvalmed.gov.co/historia-del-proyecto/" class="linkDrop">Historia del proyecto </a>
+                    <a href="https://www.fonvalmed.gov.co/resuelve-tus-dudas-sobre-el-proyecto/" class="linkDrop">Resuleve tus dudas sobre el proyecto</a>
+                    <a href="https://www.fonvalmed.gov.co/mitos-y-realidades-sobre-el-proyecto/" class="linkDrop">Mitos y realidades sobre el proyecto</a>
+                    <a href="https://www.fonvalmed.gov.co/etapas-y-estudios/" class="linkDrop">Etapas y estudios</a>
+                    <a href="https://www.fonvalmed.gov.co/datos-principales-del-proyecto/" class="linkDrop">Datos principales del proyecto</a>
+                    <a href="https://www.fonvalmed.gov.co/junta-de-representantes-de-los-propietarios/" class="linkDrop">Junta de representantes de los propietarios</a>
+                    <a href="https://www.fonvalmed.gov.co/estado-del-proyecto/" class="linkDrop">Estado del proyecto</a>
+                    <a href="https://fonvalmed.gov.co/wp-content/uploads/2020/12/mapa-2016-ABRIL.pdf" class="linkDrop">Descarga el mapa del proyecto</a>
+                    <a href="https://www.fonvalmed.gov.co/libro-proyecto-valorizacion-el-poblado/" class="linkDrop">Libro proyecto valorización El Poblado</a>
+                </div>
+            </div>
+            <li><a data-toggle="collapse" href="#itemmenumobile4" aria-expanded="false" aria-controls="itemmenumobile4">Gestión Social</a></li>
+            <div class="collapse submenicolap" id="itemmenumobile4">
+                <div class="linksColl">
+                    <a href="https://www.fonvalmed.gov.co/que-es/" class="linkDrop">¿Qué es?</a>
+                    <a href="https://www.fonvalmed.gov.co/cifras-del-la-gestion-social/" class="linkDrop">Cifras de la gestión social</a>
+                    <a href="https://www.fonvalmed.gov.co/testimonios/" class="linkDrop">Testimonios</a>
+                    <a href="https://www.fonvalmed.gov.co/como-solicitar-apoyo/" class="linkDrop">Cómo solicitar apoyo</a>
+                    <a href="https://www.fonvalmed.gov.co/grupo-de-intereses/" class="linkDrop">Grupos de interés</a>
+                </div>
+            </div>
+            <li><a data-toggle="collapse" href="#itemmenumobile5" aria-expanded="false" aria-controls="itemmenumobile5">Comunicación</a></li>
+            <div class="collapse submenicolap" id="itemmenumobile5">
+                <div class="linksColl">
+                    <a href="https://www.fonvalmed.gov.co/seguimiento-pqrsd/#" class="linkDrop">De tu interés</a>
+                    <a href="https://www.fonvalmed.gov.co/sala-de-prensa/" class="linkDrop">Sala de prensa</a>
+                    <a href="https://www.fonvalmed.gov.co/noticias/" class="linkDrop">Noticias</a>
+                    <a href="https://www.fonvalmed.gov.co/publicaciones/" class="linkDrop">Publicaciones</a>
+                    <a href="https://www.fonvalmed.gov.co/en-los-medios/" class="linkDrop">Fonvalmed en los medios</a>
+                    <a href="https://www.fonvalmed.gov.co/presentaciones/" class="linkDrop">Presentaciones</a>
+                    <a href="https://www.fonvalmed.gov.co/?page_id=1226" class="linkDrop">Formatos Fonvalmed</a>
+                    <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/" class="linkDrop">Gestión de talento humano</a>
+                    <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/#bienvenidos-a-la-familia-fonvalmed" class="linkDrop">Bienvenidos a la familia fonvalmed</a>
+                    <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/#istema-sg-sst" class="linkDrop">Sistema SG-SST</a>
+                    <a href="https://www.fonvalmed.gov.co/gestion-del-talento-humano/#reportes" class="linkDrop">Reportes</a>
+                </div>
+            </div>
+            <li><a href="https://www.fonvalmed.gov.co/tramites-y-servicios-ante-la-entidad/">Trámites y servicios</a></li>
+            <li><a href="https://www.fonvalmed.gov.co/documento-de-cobro/">Documento de cobro</a></li>
+        </div>
+    </div>
+    
+</div>
+
+<!-- ----coverGlobal---- -->
+<div class="coverGlobal coverGlobalTram">
+    <div class="degraCover">
+        <div class="contentCover">
+            <h1 class="titleCover">Sala de prensa</h1>
+            <span class="titleFonv">Fonvalmed</span>
+        </div>
+    </div>
+</div>
+
+<!-- ---Mod-Recaudo-contribución--- -->
+<div class="global">
+    <div class="contentGlobal">
+        <div class="headSingle">
+            <h3 class="titleSg">Explora todo el contenido informativo que Fonvalmed tiene para ti, conoce nuestros boletines informativos, videos, audios y mucho más.</h3>
+        </div>
+    </div>
+</div>
+
+<!-- ---Mod-Info-Img--- -->
+<div class="global">
+    <div class="contentGlobal">
+        <div class="headGlobal">
+            <h2 class="titleGlobal">Noticias <span class="lightFonv">de Fonvalmed</span></h2>
+            <a href="#" class="linkMore">Conoce todas las noticias</a>
+        </div>
+        <div class="filterFonv">
+            <form action="" class="formFilter">
+                <input type="search" name="" id="" placeholder="Buscar...">
+                <select class="form-control">
+                    <option>Default select</option>
+                </select>
+                <input type="date" name="" id="" placeholder="Buscar...">
+                <div class="subForm">
+                    <button type="submit" class="btnGlobalSec">FILTRAR</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ----Mod-Noticias---- -->
+<div class="global">
+    <div class="contentGlobal">
+        <h2 class="titleFonvSingle">Normatividad del trámite</h2>
+        <h2 class="titleFonvSingle">Trámite registrado en el SUIT</h2>
+    </div>
+</div>
+
+<!-- ---Footer---- -->
+<div class="topFooter">
+    <div class="contenidoFooter">
+        <div class="acercayLogo">
+            <div class="acerca">
+                <span class="acercaTitulo">Acércate a Fonvalmed</span>
+            </div>
+            <div class="logosAcercate">
+                <a href="index.html" class="logoFooter"><img src="img/logo-fonvalmed.png" alt=""></a>
+            </div>
+        </div>
+        <div class="rowFooter">
+            <div class="colInfo">
+                <div class="itemInfo">
+                    <h3 class="titleCol">Punto de atención presencial</h3>
+                </div>
+                <div class="itemInfo">
+                    <h4 class="subTitleCol">Sede Aeropuerto Olaya Herrera:</h4>
+                    <p>Carrera 65 No. 13 -157 piso 2 0209 Medellín, Antioquia.</p>
+                </div>
+                <div class="itemInfo">
+                    <h4 class="subTitleCol">Sede Centro Administrativo Distrital La Alpujarra:</h4>
+                    <p>Calle 44 No. 52 - 165 Taquillas 4 y 5Medellín, Antioquia.</p>
+                </div>
+                <div class="itemInfo">
+                    <h4 class="subTitleCol">Horario</h4>
+                    <p>Lunes a jueves de 7:30 a. m. a 5:30 p. m. en jornada continua y viernes de 7:30 a. m. a 4:00 p. m.</p>
+                </div>
+                <div class="itemInfo">
+                    <h4 class="subTitleCol">Línea de servicio a la ciudadanía:</h4>
+                    <p>+57 (604)557 0246</p>
+                </div>
+                <div class="itemInfo">
+                    <h4 class="subTitleCol">Correo físico o postal</h4>
+                    <p>Carrera 65 No. 13 -157 piso 2 oficina IN4 C.P. 050035 Medellín, Antioquia.</p>
+                </div>
+            </div>
+            <div class="colInfo">
+                <div class="itemInfo">
+                    <h3 class="titleCol">Atención virtual</h3>
+                    <a href="https://municipiodemedellinvirtual.sistemasentry.com.co/VisionWeb" class="linkFooter">Centro de servicios digital alcaldía de Medellín</a>
+                </div>
+                <div class="itemInfo">
+                    <h3 class="titleCol">Correo electrónico para solicitudes</h3>
+                    <a href="contactenos@fonvalmed.gov.co" class="linkFooter">Centro de servicios digital alcaldía de Medellín</a>
+                </div>
+                <div class="itemInfo">
+                    <h3 class="titleCol">Correo electrónico para notificaciones</h3>
+                    <a href="notificaciones.valorizacion@fonvalmed.gov.co" class="linkFooter">Notificaciones.valorizacion@fonvalmed.gov.co</a>
+                </div>
+                <div class="itemInfo">
+                    <h3 class="titleCol">Política privacidad y condiciones de uso sitio web</h3>
+                    <a href="https://www.fonvalmed.gov.co/wp-content/uploads/2021/12/Resolucion-General-Proteccion-de-Datos-final.pdf" class="linkFooter">Resolución General Protección de Datos</a>
+                </div>
+                <div class="itemInfo">
+                    <h3 class="titleCol">Punto de atención presencial</h3>
+                    <a href="#" class="linkFooter">+57 (604)557 0246</a>
+                </div>
+                <div class="socialFooter">
+                    <a href="https://www.facebook.com/Fonvalmed-Fondo-de-Valorizaci%C3%B3n-Municipio-de-Medell%C3%ADn-183667628320342" class="iconoSocial"><img src="img/icon-facebook.png" alt=""></a>
+                    <a href="https://twitter.com/fonvalmed" class="iconoSocial"><img src="img/icon-twitter.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerAyuda">
+        <div class="headAyuda">
+            <h3 class="titleAyuda">Ayudas y accesos directos</h3>
+        </div>
+        <div class="listAyuda">
+            <p>
+                <a href="https://www.fonvalmed.gov.co/canales-de-atencion/" class="linkAyuda">Canales de atención</a><Span>/</Span>
+                <a href="https://www.fonvalmed.gov.co/escribenos/" class="linkAyuda">Escríbenos</a><Span>/</Span>
+                <a href="https://www.fonvalmed.gov.co/documento-de-cobro/" class="linkAyuda">Documento de cobro</a><Span>/</Span>
+                <a href="https://www.fonvalmed.gov.co/noticias/" class="linkAyuda">Noticias</a><Span>/</Span>
+                <a href="https://www.fonvalmed.gov.co/mapa-del-sitio/" class="linkAyuda">Mapa del sitio</a><Span>/</Span>
+                <a href="https://metroplus.gov.co/" class="linkAyuda">Metroplus</a><Span>/</Span>
+                <a href="#" class="linkAyuda">Secretaría de Infraestructura Física</a><Span>/</Span>
+                <a href="#" class="linkAyuda">Empresa de Desarrollo Urbano</a><Span>/</Span>
+                <a href="#" class="linkAyuda">Glosario</a><Span>/</Span>
+                <a href="https://www.metrodemedellin.gov.co/" class="linkAyuda">Metro</a><Span>/</Span>
+                <a href="#" class="linkAyuda">Manuales de identidad corporativa</a><Span>/</Span>
+                <a href="#" class="linkAyuda">Monitoreo y desempeño del sitio</a><Span>/</Span>
+                <a href="#" class="linkAyuda">SUIN Juriscol</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="footernewGob">
+   <div class="centradoGovFooter">
+        <div class="logoFonv">
+            <img src="img/logo-fonvalmed-footer.png" alt="">
+        </div>
+        <div class="logosgovb">
+            <a href="https://www.colombia.co/" target="_blank">
+                <img src="img/Marca-pais.png" alt="">
+            </a>
+            <a href="https://www.gov.co/" target="_blank">
+                <img src="img/logo_gov.png" class="govstilos" alt="">
+            </a>
+        </div>
+   </div> 
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.menu-button');
+    const offCanvasMenu = document.querySelector('.off-canvas-menu');
+    const closeButton = document.querySelector('.close-button');
+
+    menuButton.addEventListener('click', function() {
+        offCanvasMenu.style.left = '0px';
+    });
+
+    closeButton.addEventListener('click', function() {
+        offCanvasMenu.style.left = '-100%';
+    });
+});
+</script>
+
+
+<!-- ----Scrips-Carousel---- -->
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/carouselTram.js"></script>
+<script src="js/carouselGal.js"></script>
+
+<!-- ---Bootstrap-cdns--- -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+</html>
