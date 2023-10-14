@@ -140,8 +140,15 @@
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .rowOb .infoOb .titleNotice {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
     .rowOb .infoOb .processOb {
         font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .rowOb .infoOb .datePublished {
         margin-bottom: 10px;
     }
     .rowOb .infoOb .porcentOb {
@@ -253,6 +260,9 @@
     }
 
     /* ---MainTram--- */
+    .contentGlobal .mainMarg {
+        margin-bottom: 20px;
+    }
     .contentGlobal .mainTram .textMain {
         font-size: 13px;
     }
@@ -304,14 +314,14 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    .rowTwo .colPost .postSid,
-    .rowTwo .colPost .postMajor {
+    .colPost .postSid,
+    .colPost .postMajor {
         box-shadow: 0 3px 20px #00000029;
     }
-    .rowTwo .colPost .postSid {
+    .colPost .postSid {
         gap: 10px;
     }
-    .rowTwo .colPost .postMajor .titlePost a {
+    .colPost .postMajor .titlePost a {
         font-size: 14px;
     }
     .listVim {
@@ -327,21 +337,21 @@
     .byPost {
         font-size: 11px;
     }
-    .rowTwo .colPost .postSid .titleSid a {
+    .colPost .postSid .titleSid a {
         font-size: 13px;
         line-height: 15px;
     }
-    .rowTwo .colPost .postSid .linkRead {
+    .colPost .postSid .linkRead {
         font-size: 12px;
     }
-    .rowTwo .colPost .postMajor p {
+    .colPost .postMajor p {
         font-size: 13px;
     }
-    .rowTwo .colPost .postSid .imgPostSid img {
+    .colPost .postSid .imgPostSid img {
         height: 130px;
         object-fit: cover;
     }
-    .rowTwo .colPost .postSid p {
+    .colPost .postSid p {
         display: none;
     }
     .rowTwo .socialFonv .iframeFonv {
@@ -355,6 +365,28 @@
     ._4-u2 {
         border-radius: 15px;
     }
+
+    /* ----rowNotes---- */
+    .rowNotes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contentNote {
+        gap: 10px;
+    }
+    .contentNote .subtitleNote {
+        font-size: 14px;
+    }
+    .contentNote p {
+        font-size: 13px;
+    }
+    .contentNote .embNote .vidNote {
+        height: 300px;
+    }
+    .sidebarPosts .contentSidebar .titlePosts {
+        font-size: 17px;
+    }
+    
 
     /* ----FilterFonv--- */
     .filterFonv .formFilter {
