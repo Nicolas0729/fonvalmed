@@ -58,6 +58,7 @@ body li {
     padding: 9px 30px;
     font-family: 'Work Sans', sans-serif;
     transition: all 0.3s ease-in-out;
+    text-align: center;
 }
 .btnGlobal:hover {
     background-color: var(--colorNaranja);
@@ -764,10 +765,10 @@ body li {
 
 /* ---PayMetod---- */
 .contentGlobal .payMetod {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 /* ----mainTram--- */
