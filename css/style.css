@@ -574,7 +574,8 @@ body li {
 .contentGlobal .headSingle {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 .contentGlobal .headSingle .titleSg {
     font-size: 25px;
@@ -584,6 +585,82 @@ body li {
 .contentGlobal .headSingle p {
     font-size: 16px;
     color: var(--colorNegro);
+}
+.contentGlobal .headSingle p .linkHead {
+    color: var(--colorNaranjaOscuro);
+}
+
+/* -----formConsulta---- */
+.formCons {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.formCons input[type="text"] {
+    width: 100%;
+    font-size: 15px;
+    font-family: var(--fuenteWork);
+    padding: 7px 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid var(--colorBorderCard);
+}
+
+/* ----accordionFonv---- */
+.accordionFonv .card {
+    border: none;
+    margin-bottom: 10px;
+}
+.accordionFonv .card .headCard {
+    border: none;
+}
+.accordionFonv .card .headCard h2 .btnAccordion {
+    width: 100%;
+    outline: 0;
+    text-align: left;
+    box-shadow: none;
+}
+.accordionFonv .card .headCard h2 .btnAccordion h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--colorTextPost);
+}
+.accordionFonv .card .bodyAccordion {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--colorBorderCard);
+    border-bottom: 1px solid var(--colorBorderCard);
+    border-right: 1px solid var(--colorBorderCard);
+    margin-bottom: 10px;
+}
+.accordionFonv .card .bodyAccordion .subtitleAcc {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--colorNegro);
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.accordionFonv .card .bodyAccordion p {
+    font-size: 16px;
+    color: var(--colorTextPost);
+    margin-bottom: 5px;
+}
+.accordionFonv .card .bodyAccordion .listAcc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.accordionFonv .card .bodyAccordion .listAcc li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+}
+.accordionFonv .card .bodyAccordion .listAcc li i {
+    font-size: 12px;
+    color: var(--colorNaranja);
 }
 
 /* ---RowIf--- */
@@ -1001,6 +1078,16 @@ body li {
             height: 100%;
         }
         .rowOb .imgOb img {
+            width: 100%;
+            height: 371px;
+            object-fit: cover;
+        }
+        .rowOb .imgOb .imgDoc {
+            width: 100%;
+            height: 291px;
+            object-fit: cover;
+        }
+        .rowOb .imgOb .vidCob {
             width: 100%;
             height: 371px;
             object-fit: cover;

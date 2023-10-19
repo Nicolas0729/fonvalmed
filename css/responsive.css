@@ -387,6 +387,17 @@
         font-size: 17px;
     }
     
+    /* ----Accordion---- */
+    .accordionFonv .card .headCard h2 .btnAccordion {
+        padding: 0px;
+        font-size: 15px;
+    }
+    .accordionFonv .card .bodyAccordion .subtitleAcc {
+        font-size: 16px;
+    }
+    .accordionFonv .card .bodyAccordion p {
+        font-size: 13px;
+    }
 
     /* ----FilterFonv--- */
     .filterFonv .formFilter {
