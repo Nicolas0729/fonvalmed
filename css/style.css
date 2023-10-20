@@ -615,6 +615,7 @@ body li {
 }
 .accordionFonv .card .headCard {
     border: none;
+    background-color: var(--colorFondoGris);
 }
 .accordionFonv .card .headCard h2 .btnAccordion {
     width: 100%;
@@ -630,9 +631,7 @@ body li {
 .accordionFonv .card .bodyAccordion {
     display: flex;
     flex-direction: column;
-    border-left: 1px solid var(--colorBorderCard);
-    border-bottom: 1px solid var(--colorBorderCard);
-    border-right: 1px solid var(--colorBorderCard);
+    background-color: #f7f7f78e;
     margin-bottom: 10px;
 }
 .accordionFonv .card .bodyAccordion .subtitleAcc {
