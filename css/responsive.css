@@ -113,7 +113,7 @@
     }
 
     .contentGlobal .headSingle .titleSg {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     /* ---RowTab-----  */
@@ -390,13 +390,18 @@
     /* ----Accordion---- */
     .accordionFonv .card .headCard h2 .btnAccordion {
         padding: 0px;
-        font-size: 15px;
+    }
+    .accordionFonv .card .headCard h2 .btnAccordion h3 {
+        font-size: 14px;
     }
     .accordionFonv .card .bodyAccordion .subtitleAcc {
         font-size: 16px;
     }
     .accordionFonv .card .bodyAccordion p {
         font-size: 13px;
+    }
+    .accordionFonv .card .bodyAccordion .listAcc li i {
+        font-size: 10px;
     }
 
     /* ----FilterFonv--- */
